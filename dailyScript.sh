@@ -89,7 +89,6 @@ if [[ $rewardStatus == "claimable" ]]; then
 	# Start the process in the background and capture its PID
 	$TBClientProcess &
 	TB_PID=$!
-	
 	while [[ $rewardStatus == "claimable" ]]; do  # Fixed spacing here
 		echo "Waiting for the client to process the reward..."
 		sleep 10  # Wait for 10 seconds before checking again
