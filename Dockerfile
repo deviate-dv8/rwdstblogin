@@ -25,4 +25,4 @@ RUN npm install
 EXPOSE 3000
 
 # Use exec form and start cron properly
-CMD ["sh", "-c", "/usr/sbin/cron && npm run dev & wait"]
+CMD ["npm","run","dev"]
