@@ -103,7 +103,11 @@ if [[ $rewardStatus == "claimable" ]]; then
 		rewardStatus="$(claimReward $userId)"
 		echo "$rewardStatus"
 	done
-	echo "Reward Claimed"
+	if [[ $rewardStatus == "successfully claimed" ]]; then
+	    echo "Reward Claimed"
+	else
+	    echo "No reward to claim."
+	fi
 	# Kill the process after the loop
 	echo "Killing the Toribash process with PID: $TB_PID"
 	kill $TB_PID
