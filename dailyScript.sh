@@ -70,7 +70,7 @@ function claimReward() {
         "REWARDS 0; 1 0 0")
             echo "claimed"
             ;;
-        "REWARDS 0; 1 1 0")
+	"REWARDS 0; 1 1 0" | "REWARDS 0; 1 2 0")
             echo "claimable"
             ;;
         *)
