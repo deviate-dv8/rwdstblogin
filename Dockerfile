@@ -7,9 +7,6 @@ RUN apt-get update && apt-get install -y curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Verify installations
-RUN wine --version && node --version && npm --version
-
 # Install required packages
 RUN apt-get update && apt-get install -y \
     xvfb \
@@ -21,25 +18,21 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 COPY . /app
 
-# Make the script executable (assuming your script is named dailyScript.sh)
+# Make the script executable
 RUN chmod +x /app/dailyScript.sh
 
-# Add the cron job to the crontab
-RUN echo "0 0 * * * TZ=UTC /app/dailyScript.sh >> /var/log/cron.log 2>&1" > /etc/cron.d/daily-job
-
-# Apply correct permissions to the cron job file
-RUN chmod 0644 /etc/cron.d/daily-job
-
-# Register the cron job
-RUN crontab /etc/cron.d/daily-job
-
-# Create a log file for cron logs
+# Create necessary directories
+RUN mkdir -p /var/run
 RUN touch /var/log/cron.log
+
+# Add the cron job
+RUN echo "0 0 * * * TZ=UTC /app/dailyScript.sh >> /var/log/cron.log 2>&1" > /etc/cron.d/daily-job
+RUN chmod 0644 /etc/cron.d/daily-job
+RUN crontab /etc/cron.d/daily-job
 
 RUN npm install
 
-# Listen port 3000
 EXPOSE 3000
 
-CMD ["sh", "-c", "npm run dev & cron && tail -f /var/log/cron.log"]
-
+# Use exec form and start cron properly
+CMD ["sh", "-c", "/usr/sbin/cron && npm run dev & wait"]
