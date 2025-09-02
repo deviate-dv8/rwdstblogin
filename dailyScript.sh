@@ -54,7 +54,6 @@ echo "Generating tb_login.dat..."
 mkdir -p ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/
 cp ./Light_Config/custom.cfg ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/custom.cfg
 cp ./Light_Config/temp.cfg ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/temp.cfg
-
 echo "Parsed User Info:"
 echo "$parsedUserInfo"
 
@@ -67,20 +66,29 @@ function claimReward() {
 
     # Parse and handle the response
     case "$response" in
-        "REWARDS 0; 1 0 0")
-            echo "claimed"
-            ;;
+	"REWARDS 0; 1 0 0")
+	    echo "claimed"
+	    ;;
 	"REWARDS 0; 1 1 0" | "REWARDS 0; 1 2 0")
-            echo "claimable"
-            ;;
-        *)
-            echo "successfully claimed"
-            ;;
+	    echo "claimable"
+	    ;;
+	"REWARDS 0; 0 0 0")
+	    echo "successfully claimed"
+	    ;;
+	*)
+	    echo "err"
+	    ;;
     esac
 }
 
 # Check and claim rewards
 rewardStatus="$(claimReward $userId)"
+echo "Reward Status: $rewardStatus"
+
+if [[ $rewardStatus == "err" ]]; then
+	echo "Error checking reward status."
+	exit 1
+fi
 
 if [[ $rewardStatus == "claimable" ]]; then
 	TBClientProcess="xvfb-run -a wine ./Toribash/toribash.exe"
@@ -89,7 +97,7 @@ if [[ $rewardStatus == "claimable" ]]; then
 	# Start the process in the background and capture its PID
 	$TBClientProcess &
 	TB_PID=$!
-	while [[ $rewardStatus == "claimable" ]]; do  # Fixed spacing here
+	while [[ $rewardStatus != "successfully claimed" || $rewardsStatus != "claimed" ]]; do
 		echo "Waiting for the client to process the reward..."
 		sleep 10  # Wait for 10 seconds before checking again
 		rewardStatus="$(claimReward $userId)"
