@@ -1,0 +1,46 @@
+shader Bubbles
+
+env_obj bubbles_1
+    pos 30 0 5
+    shape sphere
+    size 1 0 0
+    count 40
+    color 1 1 1 0.7
+    randompos 20 60 7
+    randomsize 0.8 0 0
+    randomcolor 0.5 0.5 0.5 0
+    framefunc onEnterFrame
+    
+env_obj bubbles_2
+    pos -30 0 5
+    shape sphere
+    size 1 0 0
+    count 40
+    color 1 1 1 0.7
+    randompos 20 60 7
+    randomsize 0.8 0 0
+    randomcolor 0.5 0.5 0.5 0
+    framefunc onEnterFrame
+    
+env_obj bubbles_3
+    pos 0 30 5
+    shape sphere
+    size 1 0 0
+    count 10
+    color 1 1 1 0.7
+    randompos 10 20 7
+    randomsize 0.8 0 0
+    randomcolor 0.5 0.5 0.5 0
+    framefunc onEnterFrame
+    
+env_obj bubbles_4
+    pos 0 -30 5
+    shape sphere
+    size 1 0 0
+    count 10
+    color 1 1 1 0.7
+    randompos 10 20 7
+    randomsize 0.8 0 0
+    randomcolor 0.5 0.5 0.5 0
+    framefunc onEnterFrame
+    

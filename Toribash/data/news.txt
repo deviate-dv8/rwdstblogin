@@ -1,0 +1,295 @@
+//NEWSID 0;
+//TITLE 0;The Kingship Set
+//SUBTITLE 0;King Blingo decided to bless you with the all new "Kingship" set, mortals
+//IMAGE 0;store/kingshipset.tga
+//URL 0;https://forum.toribash.com/tori_shop_item.php?id=3598
+//STORE 0;3598
+
+//NEWSID 0;
+//TITLE 0;Toribash x Makeship
+//SUBTITLE 0;Uke Plush is now available for preorders!
+//IMAGE 0;makeship2.tga
+//URL 0;https://www.toribash.com/makeship
+
+//NEWSID 1;
+//TITLE 0;Rags 2 Riches
+//SUBTITLE 0;This is a chance for you marketeers to put your money where your mouth is and battle it out to earn the most TC!
+//IMAGE 0;ragstoriches22.tga
+//URL 0;https://forum.toribash.com/showthread.php?t=656540
+
+NEWSID 2;
+TITLE 0;Leggang Statue
+SUBTITLE 0;Now EVERY day is leg day!
+IMAGE 0;store/leggangpromo.tga
+URL 0;https://forum.toribash.com/tori_shop_item.php?id=3550
+STORE 0;3550
+
+NEWSID 3;
+TITLE 0;No events live now, but you can still replay any ended event in all events menu!
+IMAGE 0;noevents-placeholder.tga
+FEATURED 0;
+
+//NEWSID 3;
+//TITLE 0;Soccer League
+//IMAGE 0;soccerleague.tga
+//EVENT 0;1
+//FEATURED 0;
+
+//NEWSID 4;
+//TITLE 0;Free Run Frenzy 5
+//IMAGE 0;freerunfrenzy5.tga
+//EVENT 0;2
+//FEATURED 0;
+
+//NEWSID 4;
+//TITLE 0;Scrambled Eggs
+//IMAGE 0;scrambledeggs.tga
+//EVENT 0;2
+//FEATURED 0;
+
+//NEWSID 4;
+//TITLE 0;Opener Challenge 8
+//SUBTITLE 0;Show off your tricking skills with OC8!
+//IMAGE 0;openerchallenge20sum.tga
+//EVENT 0;1
+//FEATURED 0;
+
+//NEWSID 9;
+//TITLE 0;It's rank climbing time!
+//IMAGE 0;modmania20.tga
+//EVENT 0;5
+//MODCHAMPIONSHIP 0;
+//FEATURED 0;
+
+//NEWSID 5;
+//TITLE 0;Floor is Lava 3
+//IMAGE 0;floorislava.tga
+//EVENT 0;4
+//FEATURED 0;
+
+//NEWSID 7;
+//TITLE 0;Head in the Wall 2
+//IMAGESMALL 0;headinthewallsmall.tga
+//IMAGE 0;headinthewall2.tga
+//EVENT 0;3
+//FEATURED 0;
+
+//NEWSID 10;
+//TITLE 0;Wipeout Warrior
+//IMAGE 0;wipeoutwarrior.tga
+//EVENT 0;2
+//FEATURED 0;
+
+//NEWSID 10;
+//TITLE 0;Flash Course 3
+//SUBTITLE 0;Can you complete all the checkpoints?
+//IMAGE 0;flashcourse.tga
+//EVENT 0;6
+//FEATURED 0;
+
+EVENTID 1;
+NAME 0;Toribash Soccer League
+//IMAGE 0;leggang.tga
+//URL 0;https://forum.toribash.com/showthread.php?t=655190
+//PLAYNAME 0;soccerleague
+OVERLAYTRANS 0;0.1
+PLAYTEXT 0;PARTICIPATE
+ACCENTCOLOR 0;d4d7ec
+UICOLOR 0;000000
+BTNHVRCOL 0;1e343b
+BTNDNCOL 0;f9bc71
+DESCDATA 0;1Description
+DESCDATAIMGTITLE 0;1oc_description.tga
+DESCDATATEXT 0;1The Toribash Soccer League majors have come around, now is your time to shine!\n\nYour goal is to lob your recently decapitated head into one of the two goal posts without touching any of the red objects.\n\nBut here's the catch: If you want to make it out with the TSL prizes you will need to best our automated goalie system!\n What does this mean?\nWell, there are two goal posts you can choose from.\nOne will have slow blocks bouncing back and forth, basically a free win right?\nHowever, the second one will have faster blocks and a no-touch zone around the edges.\n\nRemember to avoid touching the head with your hands!
+DESCDATA 0;2Rules
+DESCDATAIMGTITLE 0;2oc_rules.tga
+DESCDATATEXT 0;2- No replay hacking\n- Do not steal others' replays\n- Do not modify event mod\n- Do not enter the event with multiple accounts
+DESCDATA 0;3Deadline
+DESCDATAIMGTITLE 0;3oc_deadline.tga
+DESCDATATEXT 0;3June 7th, 20:00 / 8 PM UTC
+PRIZEIMG 0;oc_prizes.tga
+PRIZEDATA 0;1Score in the red gate
+PRIZETC 0;18000
+PRIZEST 0;14
+PRIZEITEMS 0;11 3442
+PRIZEDATA 0;2Score in the blue gate
+PRIZETC 0;24000
+PRIZEST 0;22
+
+EVENTID 2;
+NAME 0;Free Run Frenzy 5
+URL 0;https://forum.toribash.com/showthread.php?t=656097
+//PLAYNAME 0;freerunfrenzy5
+OVERLAYTRANS 0;0.8
+PLAYTEXT 0;PARTICIPATE
+ACCENTCOLOR 0;831835
+UICOLOR 0;FFFFFF
+BTNHVRCOL 0;6cffff
+BTNDNCOL 0;fa19eb
+DESCDATA 0;1Description
+DESCDATAIMGTITLE 0;1oc_description.tga
+DESCDATATEXT 0;1Hi and welcome to Event Squad's Free Run Frenzy 5!\n\nIn this parkour event you need to complete the map made by Matarika and get to the finish zone in order to claim the prize!\nYou can also take a more complicated route and complete the optional checkpoint to get an additional reward!\n\nGood luck and have fun!
+DESCDATA 0;2Rules
+DESCDATAIMGTITLE 0;2oc_rules.tga
+DESCDATATEXT 0;2- No replay hacking\n- Do not steal others' replays\n- Do not edit any of the mod's game rules\n- Do not enter the event with multiple accounts
+DESCDATA 0;3Deadline
+DESCDATAIMGTITLE 0;3oc_deadline.tga
+DESCDATATEXT 0;3June 28th, 13:00 UTC / 9 AM EST
+PRIZEIMG 0;oc_prizes.tga
+PRIZEDATA 0;1Complete the map
+PRIZETC 0;16000
+PRIZEST 0;12
+PRIZEDATA 0;2Checkpoint completion reward
+PRIZETC 0;24000
+PRIZEST 0;22
+PRIZEITEMS 0;21 3238
+PRIZEDATA 0;3Best Replay
+PRIZETC 0;375000
+PRIZEST 0;310
+PRIZEITEMS 0;31 3234
+
+EVENTID 3;
+NAME 0;Toribash Season 8
+IMAGE 0;season8.tga
+URL 0;https://www.toribash.com/season8
+OVERLAYTRANS 0;0.75
+ACCENTCOLOR 0;2d2c41
+UICOLOR 0;ffffff
+BTNHVRCOL 0;f4d4bb
+BTNDNCOL 0;c2a289
+DESCDATA 0;1Description
+DESCDATATEXT 0;1Hello hello! Nabi Studios are very excited to announce our most ambitious project ever.\nSeason 8 will feature the very first Battlepass ever, and the prizes are so good we can't wait to show you!\nBe prepared to have the most fun you will ever have.
+DESCDATA 0;2How it works
+DESCDATATEXT 0;2All Green Belt+ players can participate in Season 8 by playing ranked games in special ranked rooms.\nYou will be unranked for your first 10 games and placed in a rank according to your Elo based on how you played while unranked.\n\nAfter playing your qualification matches, you will receive a rank tier depending on your Elo:\n\nElo Hell (0 - 1550)\nBronze (1550 - 1575)\nSilver (1575 - 1595)\nGold III (1595 - 1615)\nGold II (1615 - 1630)\nGold I (1630 - 1645)\nPlatinum III (1645 - 1660)\nPlatinum II (1660 - 1675)\nPlatinum I (1675 - 1690)\nDiamond (1690+)
+DESCDATA 0;3Battle Pass
+DESCDATATEXT 0;3As part of Season 8, we are incredibly excited to announce to you our brand new BATTLEPASS.\nIf you've played other modern games then you probably know what's up however for those that don't, we'll explain briefly.\n\nThe Battlepass is a way you can earn rewards just from playing the game.\nVarious aspects of the game grant you xp towards the Battlepass such as ranked, tournaments, quests and even just playing with your friends normally.\nAs you gain XP you gain levels along with it, as you hit these levels you unlock rewards at every tier.\n\nWe have two versions of the Battlepass, a free version and a premium version which costs $10 early bird and $15 later on.\nPurchasing the premium Battlepass allows you to gain both sets of rewards.\n\nPrizes for this battlepass include exclusive new variations of existing items, as well as all new 3d items, flames and colours!\nSome flames even have rarer variants which have a percentage chance to drop when claimed!\n\nIf grinding isn't your thing, it is possible to purchase levels throughout the Battlepass using Shiai Tokens, too.\n\nThis is the very first season we're launching a Battlepass and we hope to do one with every ranked season moving forward.\nNaturally there may be some improvements to be made over time, especially with this being the first of its kind in Toribash! But we'll monitor how it goes and keep working hard to improve as we move forward.\n\nA lot of people put a lot of hours into this and we're incredibly proud of what we've come up with and we cannot wait for you to see it!
+PRIZEDATA 0;1#1 Ranked Player
+PRIZETC 0;11250000
+PRIZEST 0;1100
+PRIZEDATA 0;2#2 Ranked Player
+PRIZETC 0;2650000
+PRIZEST 0;250
+PRIZEDATA 0;3#3 Ranked Player
+PRIZETC 0;3350000
+PRIZEST 0;325
+PRIZEDATA 0;4Top 5 Ranks (each mod)
+PRIZETC 0;450000
+PRIZEST 0;45
+PRIZEDATA 0;5Diamond Players
+PRIZETC 0;575000
+PRIZEST 0;510
+PRIZEDATA 0;6Platinum Players
+PRIZETC 0;620000
+PRIZEST 0;67
+PRIZEDATA 0;7Gold Players
+PRIZEST 0;73
+
+EVENTID 4;
+NAME 0;Single Player Cup 2022
+//PLAYNAME 0;spcup
+OVERLAYTRANS 0;0.7
+URL 0;https://forum.toribash.com/showthread.php?t=655169
+PLAYTEXT 0;SIGN UP (STEAM ONLY)
+ACCENTCOLOR 0;e8c2b1
+UICOLOR 0;080304
+BTNHVRCOL 0;462526
+BTNDNCOL 0;ed6057
+DESCDATA 0;1Description
+DESCDATAIMGTITLE 0;1fil_description.tga
+DESCDATATEXT 0;1Good morning, good afternoon, good evening and good night everyone and welcome to the 2022 Single Player World Cup!\n\nThis event is the top event for single player replay makers across the globe, THE place to throw down and prove you're the best.\nThis event will be an open qualifying round, followed by 5 rounds to narrow down 32 competitors to just 1 winner.\n\nTo qualify all you have to do is submit in your best replay!
+DESCDATA 0;2Rules
+DESCDATAIMGTITLE 0;2fil_rules.tga
+DESCDATATEXT 0;2- Replay should be no longer than 750 frames\n\n- ENGAGE DISTANCE must end in a 1\nFor example, the engage distance can be 101, 151, etc\n- If you change player engage position, it should also end with a 1\n\n- Don't steal others' replays\n\n- Hacking is allowed
+DESCDATA 0;4Deadline
+DESCDATAIMGTITLE 0;4fil_deadline.tga
+DESCDATATEXT 0;4April 27th, 18:00 / 6 PM UTC
+DESCDATA 0;5
+PRIZEIMG 0;fil_prizes.tga
+PRIZEDATA 0;1First Place
+PRIZETC 0;1200000
+PRIZEST 0;140
+PRIZEITEMS 0;13 2096 2093 2042
+PRIZEDATA 0;2Second Place
+PRIZETC 0;2100000
+PRIZEST 0;230
+PRIZEITEMS 0;23 2095 2092 2042
+PRIZEDATA 0;3Third Place
+PRIZETC 0;350000
+PRIZEST 0;320
+PRIZEITEMS 0;33 2094 2091 2042
+PRIZEDATA 0;4Join the Cup
+PRIZEITEMS 0;41 3595
+
+EVENTID 5;
+NAME 0;Mod Mania 2022 - July
+//URL 0;https://forum.toribash.com/showthread.php?t=649614
+OVERLAYTRANS 0;0.7
+ACCENTCOLOR 0;bd0637
+UICOLOR 0;FFFFFF
+BTNHVRCOL 0;ffba43
+BTNDNCOL 0;fff8e9
+DESCDATA 0;1Description
+DESCDATATEXT 0;1Welcome to Mod Mania 2022!\n\nMod Mania is a multiplayer championship focused around a specific mod.\nPlay in modmania rooms, win games and climb up ranks and get rewards!
+DESCDATA 0;2Mod
+DESCDATATEXT 0;2This time the mod you'll play is lowkido_brutal.tbm, made by avenue.\n\nIn its core, it's a variation of aikido.tbm - but with -45 gravity, DQ timeout and increased distance between players.
+DESCDATA 0;3How to Participate
+DESCDATATEXT 0;3Play in any modmania room until the event is over and get rewards based on how many games you've won!\n\nThere's also a global objective for the event - if that is hit before the deadline, all Mod Mania participants will receive an additional reward!
+PRIZEDATA 0;1Top 10 players (by games won, prize listed is for 1st place)
+PRIZETC 0;150000
+PRIZEST 0;15
+PRIZEDATA 0;2Global rank 1
+PRIZETC 0;2100000
+PRIZEST 0;210
+PRIZEDATA 0;3Global rank 2
+PRIZETC 0;375000
+PRIZEST 0;38
+PRIZEDATA 0;4Global rank 3
+PRIZETC 0;450000
+PRIZEST 0;46
+PRIZEDATA 0;5Global ranks 4 - 8
+PRIZETC 0;530000
+PRIZEST 0;54
+PRIZEDATA 0;6Global ranks 9 - 20
+PRIZETC 0;615000
+PRIZEST 0;63
+
+EVENTID 6;
+NAME 0;Flash Course
+//PLAYNAME 0;flashcourse3
+OVERLAYTRANS 0;0
+PLAYTEXT 0;PARTICIPATE
+ACCENTCOLOR 0;42badf
+UICOLOR 0;000000
+BTNHVRCOL 0;005471
+BTNDNCOL 0;01befe
+DESCDATA 0;1Description
+DESCDATATEXT 0;1Welcome to Flash Course 3!\nThis time, completion time isn't as important. What you need to focus on is running through as many blue zones (aka checkpoints) as you can!\nCompleting each checkpoint will allow you to win a better prize - and completing 3 or 4 checkpoints will allow you to compete for the best replay.\nWhen you've finished, run to one of the red buttons located next to the doors and press it to be able to submit your replay!
+DESCDATA 0;2Rules
+DESCDATATEXT 0;2- Replay hacking is forbidden\n- Replay stealing is forbidden\n- You cannot modify mod settings or gamerules except for turnframes\n- Do not try to enter the event with multiple accounts
+DESCDATA 0;4Deadline
+DESCDATATEXT 0;4October 22th, 2021\n16:00 (UTC+0 Time)\n9 AM (PDT Time)
+DESCDATA 0;5
+PRIZEDATA 0;1Best replay
+PRIZETC 0;169000
+PRIZEST 0;115
+PRIZEITEMS 0;14608 3331 3496 3351
+PRIZEDATA 0;2Complete 4 checkpoints
+PRIZETC 0;219000
+PRIZEST 0;27
+PRIZEITEMS 0;233331 3496 3351
+PRIZEDATA 0;3Complete 3 checkpoints
+PRIZETC 0;314000
+PRIZEST 0;35
+PRIZEITEMS 0;323496 3351
+PRIZEDATA 0;4Complete 2 checkpoints
+PRIZETC 0;49000
+PRIZEST 0;43
+PRIZEITEMS 0;423496 3351
+PRIZEDATA 0;5Complete 1 checkpoint
+PRIZETC 0;55000
+PRIZEST 0;52
+PRIZEITEMS 0;513351
+PRIZEDATA 0;6Press a red button
+PRIZETC 0;61500
+PRIZEST 0;61
+PRIZEITEMS 0;613351

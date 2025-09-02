@@ -1,0 +1,340 @@
+          _
+           `\,,
+        `\,, "#__
+   __ `\, "#.-'  `-.       __                         ___
+ .'  `. ##.'        `.   .'  `.      ,\            #_//'
+ :    : "#:          :   :    : _  ./"'        ," ,"-' `
+ `.__.'   :          :   `.__.'( )/"      ___',        ` `
+          `.        .'#         |'\     .'.-.`. |\__  |\
+     ,"`####`-.  .-'###---   ./'"\ `\__,|| , || |,-.| ||
+        "#####:  :####"    ,/"    `\,--#||   || ||  ' ||
+    ----######:  :####---. \'      ||'," \`-'/  \|    \|
+         "####:  :#####            ()  '  """                   ,    __
+       __.-###:  :#########---     ||          . .      _____ ./:  ,':
+    _-' "#####:  :'   `.###_       `"--       . ,/|   ,',--"  : :  : :
+   /   _,#####:         :#"             ______ .| |   | (_    : :__: :
+     /'  #####:         :##---.      _.| ____ |#' `\  `.__`.  :    . :
+        /" ###;        .'-.    `\  .'    _____|# |\_`\    `.`.: :"": :
+      /'    ##:            `.###   |     ____ |# |__| |__,-',': :  : :
+              `.             :###--.`-.|______||  __  | "--' .'.' .'.'
+              #:             :####          . .| |  | |     /""' /""'
+               :             :####--.      . ..`\|  `\|
+               `.           ,'"###           .  .
+                 `-.____.--'     "`\        . .
+
+.-----------------.
+| TORIBASH MANUAL |
+`-----------------'
+
+27-03-2008
+EMAIL: hampa@toribash.com
+
+.------.
+| Info |
+`------'
+
+This manual, is viewed best in notepad or "more" ;-).
+
+.------------------------.
+| Controlling Characters |
+`------------------------'
+
+1. Select player with left mouse button.
+
+2. Click a joint to toggle state (Relax/Hold).
+     + Highlighting a Joint and pressing 'X' will give the same action
+     + Pressing 'C' will either Hold-all/Relax-all Joints.
+
+3. Scrolling the mouse wheel up or down on a joint, will result in either
+   (Force Forward/Force Backward) respectively
+     + Highlighting a joint and pressing 'Z' will also alternate between the 2
+       forces.
+
+4. Left mouse click on hands to prepare it for gripping.
+
+5. When setting a joint behaviour a joint reverse a previous effect, e.g;
+     + Relax/Hold
+     + Hold-all/Relax-all
+     + Force Forward/Force Backward
+     + Grip/Ungrip
+
+.-----------------------------.
+| Controlling Game and Camera |
+`-----------------------------'
+
+SPACE            - Move forward 1 turn (Default: 10 frames), View replay, New
+                   Game.
+SHIFT+SPACE      - Move forward 1 Frame (single player mode only).
+Arrows,ASDW      - Rotate/Zoom Camera.
+SHIFT+Up/Down,WS - Rotate/Pan Camera.
+P                - Pause/Play during fight replay.
+SHIFT+P          - Play 1 frame during fight replay (single player mode only).
+ESC              - Open/Close menu.
+F                - Save current replay.
+
+.--------------.
+| Menu Options |
+`--------------'
+
+SINGLE PLAYER - Start a new Single player game.
+MULTI PLAYER  - Opens up the list of servers, after choosing a server you will be taken into the current game.
+REPLAYS       - Lists all of your replays click on a replay to view it.
+TUTORIAL      - Start a short introduction of how to play Toribash.
+TORISHOP      - Open up the Torishop menu where you can buy things like textures, blood colors and more.
+SETUP         - Go into the game settings menu, which consists of the following sub menus:
+|-> OPTIONS       - To change sound, graphic, mouse and replay options.
+|-> MODS          - Choose/enable a game mod.
+|-> SCRIPTS       - Start scripts.
+|-> GAME RULES    - Change rules about the behavior of the fights.
+|-> LOGIN         - Specify your Toribash account here.
+|-> ABOUT         - Version info and copyright.
+|-> BACK          - Go back to the main menu.
+QUIT          - Closes the application.
+
+.----------.
+| Ghosting |
+`----------'
+
+To preview your move a ghost of your character is shown. Only the selected
+character is ghosted.
+Both characters can be ghosted with the 'B' key.
+
+.---------.
+| Scoring |
+`---------'
+
+Toribash uses location based damages. Hitting head causes most damage.
+Feet, Hands, Knees and Elbows does not take any damage.
+
+A hit bodypart turns red. The deeper the red the more damage thats been done.
+
+.----------------.
+| Dismemberments |
+`----------------'
+
+A hard blow can break a joint. Joints are the weakest when they have just been
+hit (and are drawn in red).
+
+If a joint isn't hit for a little while, its current damage will lower
+gradually. Once a joint breaks it can no longer be used.
+
+The bodypart will seperate and the joint will be in a deep red, and bleed.
+
+.-----------.
+| Fractures |
+`-----------'
+
+A hard blow can break a joint. Joints are the weakest when they have just been
+hit (and are drawn in red).
+
+If a joint isn't hit for a little while, its current damage will lower
+gradually. Once a joint is fractured it can no longer be used.
+
+The bodypart will move according to momentum, even bending backwards, and will
+be drawn in blue.
+
+Fractured bodyparts cannot be dismembered.
+
+.----------.
+| Gripping |
+`----------'
+
+Clicking left or right hand prepares it for gripping. A player can both grip
+the other player and himself. To release the grip, click on the hand once more.
+
+Grips are shown with a green transparent sphere.
+
+Grip toggle can also be done by hovering the mouse over the wrist and pressing
+L.
+
+.-------------------.
+| Disqualifications |
+`-------------------'
+
+Only hand and feet are allowed to touch the ground. A player who touches the
+ground with any other bodypart or joint is disqualified.
+
+When this happens a circle is drawn in the color of the player that lost (red
+or blue). The origin of the circle is where the bodypart touched the ground.
+
+.--------------.
+| Edit replays |
+`--------------'
+
+It's possible to modify an existing replay. To do this you must first hit PAUSE
+key 'p' at your desired point and then the edit key 'e'.
+
+This will put the replay in EDIT mode and you can continue tweaking the replay
+from that point on.
+
+When you are done you must save fight with a new name. The existing fight will
+still be there under it's original name.
+
+SHIFT+P can be used to step the replay one frame at the time until you find the
+best frame for editing.
+
+.---------------.
+| Head textures |
+`---------------'
+
+If the replay Author or multiplayer nickname matches any of the textures in the
+heads subdirectory, they will skin the player.
+
+If you set your nickname in the options, and it matches one of the heads it
+will skin all your replays by default
+
+.--------------.
+| Key Shortcut |
+`--------------'
+
+r           - Replay from beginning
+p           - Pause/Play
+SHIFT+p     - Pause/Play one frame
+g           - Ghost player (physics preview)
+b           - Ghost both players (physics preview)
+t           - Send chat message (In single player mode allows use of command line)
+Ctrl-Enter  - Toggle fullscreen
+1,2,3,4,5,6 - Camera angle presets (0, 90, 180 and 270 degrees, as well as head-to-head views).
+e           - Turn a replay into edit mode (must be paused first).
+F8          - Take screenshot
+Ctrl-F7     - Start saving every frame as a .pov in frames directory.
+
+.---------.
+| Replays |
+`---------'
+
+Replays are located in the replay subdirectory. They are plain text files with
+a .rpl extension and can be easily be shared among players.
+
+Clicking on a replay file will open up Toribash and play the file.
+
+Replay authors that matches any of the textures in heads subdirectory will skin
+the ingame characters.
+
+.---------------.
+| Single Player |
+`---------------'
+
+Objective is get as much damage points as possible in the most spectacular way.
+Single player is fully customizeable in options, mods are also available for
+use.
+
+.--------------.
+| Multi Player |
+`--------------'
+
+How to play Multi Player Game:
+1. Log in to a Toribash server (ESC -> Multi Player)
+2. You have a set amount of time for each round to prepare your move.
+3. You prepare your move as in single player. When you are ready. Hit SPACE.
+4. Both players prepare move at the same time.
+5. The player with the most points when ROUNDS timer hit 0 is the winner.
+6. You get DISQUALIFIED (if applicable) if anything but hands, feet touch the
+   ground.
+7. Winner stays and loser is put in queue among the other fighter.
+
+Toribash is played with a central server that manages the game.
+The server ip is visible in the Multi Player screen.
+
+Use 't' to send a chat message
+
+  (== Belts ==)
+  - As you get better online, and start winning games you will get greater belts.
+    These give NO special abilities they are only badges of honor.
+
+     * White:      ->    0 plays
+     * Yellow:     ->   20 plays
+     * Orange:     ->   50 plays
+     * Green:      ->  100 plays
+     * Blue:       ->  200 plays
+     * Brown:      ->  500 plays
+     * Black:      -> 1000 plays
+
+  - Dans are achieved after reaching black belt.
+
+     * Second Dan  ->  2000 plays
+     * Third Dan   ->  3000 plays
+     * Fourth Dan  ->  4000 plays
+     * Fifth Dan   ->  5000 plays
+     * Sixth Dan   ->  6000 plays
+     * Seventh Dan ->  7000 plays
+     * Eighth Dan  ->  8000 plays
+     * Ninth Dan   ->  9000 plays
+     * Tenth Dan   -> 10000 plays
+     * Master Belt -> 15000 plays
+     * Custom Belt -> 20000 plays
+     * God Belt    -> 50000 plays
+
+
+.-----------------.
+| Ingame commands |
+`-----------------'
+
+Hit 'T' (talk) and type one of the following commands:
+/help                  - This will give you help with all the command lines.
+/nick <new nick name>  - Set nickname
+/spec                  - Join spectators
+/enter                 - Enter bout list
+/chatlines <number>    - This will change the amount of chat lines visable.
+/emote <message>       - When in a match you can use this to display text in
+                         the bout.
+/altimeter             - This will display the height information of your
+                         highest body part.
+/loadmod <modname.tbm> - This is to load a mod in game.
+/resolution 800 600    - This will set the resolution to 800x600.
+/resolution 1024 768   - This will set the resolution to 1024x768.
+
+.-------------.
+| Screenshots |
+`-------------'
+
+F8 will take save a screenshot.bmp and a raytrace/screenshot.pov
+The .pov file is a raytrace file that can be rendered with povray
+(http://www.povray.org/).
+
+.--------.
+| Forums |
+`--------'
+
+http://forum.toribash.com/
+
+the forum is full of tutorials for Toribash, which house more information than
+we could fit into this manual come online and meet your fellow bashers!!
+
+We have tonnes of experienced players that are more than happy to share there
+knowledge with newer players so if you are stuck on aspects of Toribash don't
+be afraid to ask...
+
+.--------------.
+| Custom Blood |
+`--------------'
+
+Custom Blood can be obtained through the Toribash Forum Shop. Once you have
+obtained enough credits you can buy a custom blood colour. However there are
+limitations! You must have your key registered on the forum and you must also
+have the same in game name as your forum name.
+
+For more information please visit the forum.
+
+.----------------.
+| General Advice |
+`----------------'
+
+Don't change too many forces every round and tweak your character to a stall.
+
+In multiplayer focus on balance over impact velocity.
+A player that uses 90% of his power and can maintain his balance usually comes
+out on top.
+
+Punching is more about controlling upper body than actual arms (a bit like in
+real boxing)
+
+
+have fun! :)
+Team Toribash
+
+for problems, please email <support@toribash.com>.
+
+[This version of the manual was updated by 'Bloodkitty' 0.o]
+[Edited again on 1/3/2007 by Mr-Deanster & Qegola]
+[Edited again on 2007-03-27 by aszlig]

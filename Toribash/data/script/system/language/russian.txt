@@ -1,0 +1,743 @@
+# New UI Localization file		
+NAVBUTTONHOME	Главная	
+NAVBUTTONPLAY	Игра	
+NAVBUTTONPRACTICE	Тренировка	
+NAVBUTTONMODS	Моды	
+NAVBUTTONTOOLS	Инструменты	
+NAVBUTTONTOMAIN	На главную	
+NAVBUTTONBACK	Назад	
+NAVBUTTONEXIT	Выход	
+NAVBUTTONLOGINREWARDS	Награда за вход	
+NAVBUTTONQUESTS	Задания	
+MAINMENUUSERCLAN	Клан	
+MAINMENUTORISHOPNAME	Торишоп	
+MAINMENUTORISHOPDESC	Примерьте и купите предметы для вашего Тори	
+MAINMENUCLANSNAME	Кланы	
+MAINMENUCLANSDESC	Узнайте больше о кланах Toribash	
+MAINMENUREPLAYSNAME	Повторы	
+MAINMENUREPLAYSDESC	Просматривайте сохранённые повторы	
+MAINMENUFREEPLAYNAME	Свободная игра	
+MAINMENUFREEPLAYDESC	Тренируйтесь или создавайте повторы в режиме одиночной игры	
+MAINMENURANKEDNAME	Ранкинг	
+MAINMENURANKEDDESC	Поиск быстрой дуэли в соревновательном режиме	
+MAINMENUMATCHMAKINGNAME	Матчмейкинг	
+MAINMENUMATCHMAKINGDESC	Быстрый способ найти соперника для боёв один-на-один	
+MAINMENUROOMLISTNAME	Список комнат	
+MAINMENUROOMLISTDESC	Создайте собственную комнату, либо присоединитесь к уже существующей	
+MAINMENUBEGINNERTUTNAME	Руководство новичка	
+MAINMENUBEGINNERTUTDESC	Узнайте об основах Toribash: управление, геймплей и многое другое	
+MAINMENUADVMOVESNAME	Продвинутые приемы	
+MAINMENUADVMOVESDESC	Изучите продвинутые приемы для игры по сети	
+MAINMENUFIGHTUKENAME	Бой против Юке	
+MAINMENUFIGHTUKEDESC	Испытайте свои навыки в бою с давним соперником Тори!	
+MAINMENUCOMEBACKNAME	Тренировка возвращения	
+MAINMENUCOMEBACKDESC	Старайтесь догнать Юке, избегая дисквалификации	
+MAINMENUGAMERULESNAME	Правила игры	
+MAINMENUGAMERULESDESC	Изменяйте гравитацию и другие параметры игры	
+MAINMENUMODLISTNAME	Список модов	
+MAINMENUMODLISTDESC	Загрузите один из скачанных модов	
+MAINMENUMODMAKERNAME	Модмейкер	
+MAINMENUMODMAKERDESC	Создайте свой собственный мод для Toribash	
+MAINMENUMODSDISCOVERNAME	Поиск модов	
+MAINMENUMODSDISCOVERDESC	Найдите моды, созданные другими игроками	
+MAINMENUSHADERSNAME	Шейдеры	
+MAINMENUSHADERSDESC	Изменяйте освещение и окружение мира Toribash	
+MAINMENUSCRIPTSNAME	Скрипты	
+MAINMENUSCRIPTSDESC	Загрузка предустановленных или сторонних скриптов для Toribash	
+MAINMENUSOUNDSNAME	Звуки	
+MAINMENUSOUNDSDESC	Настройте пользовательские звуки	
+MAINMENUHOTKEYSNAME	Горячие клавиши	
+MAINMENUHOTKEYSDESC	Список горячих клавиш Toribash	
+MAINMENUSIGNINERROR	Вам нужно войти в сеть, чтобы	
+DOWNLOADINGFILESWAIT	Загрузка файлов, пожалуйста, подождите...	
+STORESETEMPTY	Пусто	
+STOREITEM	предмет	
+STOREITEMS	предметов	
+STOREFLAMEBODYPART	Пламя для	
+STOREFLAMEID	ID пламени	
+STOREFLAMEFORGEDBY	Создан	
+STOREITEMINSIDESET	Внутри сета	
+STOREOBJITEMBODYPART	3D модель для	
+STOREITEMNODESCRIPTION	У этого предмета пока нет описания	
+STOREITEMGOTOSET	Перейти к сету	
+STORESETITEMNAME	Сет	
+STOREITEMADDTOSET	Добавить в сет	
+STOREITEMREMOVEFROMSET	Удалить из сета	
+STORESETSELECTIONCONTROLS	Действия с выбранным	
+STORESETSELECT	Выбор сета	
+STOREVIEWSETITEMS	Просмотр сета	
+STOREITEMSINSET	Предмет(ов) внутри сета	
+STORESELLMARKET	Продать в маркете	
+STOREDIALOGMARKETSELL1	Вы действительно хотите разместить	
+STOREDIALOGMARKETSELL2	в маркете?	
+STOREITEMDEACTIVATE	Деактивировать	
+STOREDIALOGDEACTIVATE1	Вы действительно хотите деактивировать	
+STOREDIALOGDEACTIVATE2		
+STOREITEMACTIVATE	Активировать	
+STOREDIALOGACTIVATE1	Вы действительно хотите активировать	
+STOREDIALOGACTIVATE2		
+STOREDIALOGCONFLICTSDEACTIVATE	Любые конфликтующие предметы будут деактивированы	
+STOREDIALOGITEMCONFLICTDEACTIVATE	конфликтует с этим предметов и будет деактивирован.	
+STOREITEMUNPACK	Распаковать	
+STOREDIALOGUNPACK1	Вы уверены, что хотите распаковать	
+STOREDIALOGUNPACK2		
+STOREDIALOGUNPACKINFO	Распакованные предметы будут помещены в сет,\nдобавленный в ваш деактивированный инвентарь.	
+STOREBUTTONCANCEL	Отменить
+STOREDIALOGADDTOSET1	Вы уверены, что хотить добавить
+STOREDIALOGADDTOSET2	в сет
+STOREDIALOGREMOVEFROMSET1	Вы уверены, что хотить удалить
+STOREDIALOGREMOVEFROMSET2	из сет
+STOREACTIVATEDINVENTORY	Активированный инвентарь	
+STOREDEACTIVATEDINVENTORY	Деактивированный инвентарь	
+STOREMARKETINVENTORY	Предметы в маркете	
+STOREINVENTORYALLITEMS	Все предметы в инвентаре	
+PAGINATIONPAGE	Страница	
+PAGINATIONPAGEOF	из	
+STOREINVENTORYLOADING	Загрузка данных из Тори-вселенной	
+STOREDATALOADERROR	Произошла ошибка при получении данных Торишопа.\nПожалуйста, подождите пока он обновится, или проверьте разрешения папки Toribash.	
+STOREGOTOSHOP	Открыть магазин	
+STORESHOPDESC	Купите новые предметы для вашего Tori	
+STOREGOTOINVENTORY	Открыть инвентарь	
+STOREINVENTORYDESC	Кастомизируйте своего персонажа с помощью купленных предметов	
+STORESTEAMPURCHASELOADING	Работаем	
+STORESTEAMPURCHASEERROR	Что-то пошло не так	
+CLANSMYCLAN	Мой клан	
+CLANSCLANLEADER	Лидер клана	
+CLANSCLANMEMBER	Участник клана	
+CLANSTOGETHERWITH	Вместе с	
+CLANSVIEWCLAN	Показать клан	
+GENERALSTRINGAND	и	
+CLANFILTERSRANK	Ранг	
+CLANFILTERSCLANNAME	Имя	
+CLANFILTERSCLANTAG	Тэг	
+CLANFILTERSCLANID	ID	
+CLANFILTERSOFFICIALSTATUS	Статус	
+CLANFILTERSJOINMODE	Режим вступления	
+CLANFILTERSDEAD	Мертв	
+CLANFILTERSINACTIVE	Неактивен	
+CLANFILTERSACTIVE	Активен	
+SORTORDERASCENDING	По возрастанию	
+SORTORDERDESCENDING	По убыванию	
+CLANFILTERSACTIVITYSTATE	Статус активности	
+CLANFILTERSACTIVITYSTATEDESC	Клан считается активным, если в нём находится хотя бы 5 игроков. Кланы, не имеющие участников, считаются мертвыми.	
+CLANFILTERSFFAONLY	Только открытые кланы	
+CLANFILTERSFFAONLYDESC	Вы можете вступить в открытые кланы в любой момент одним нажатием мыши. Приватные кланы имеют специальный процесс вступления по заявкам.	
+CLANFILTERSOFFICIALONLY	Только официальные кланы	
+CLANFILTERSOFFICIALONLYDESC	Официальные кланы имеют свою собственную ветку на форуме Toribash и квадратные скобки в игре.	
+SORTBYNAME	Сортировать по	
+SORTORDERNAME	Порядок сортировки	
+CLANSSEARCHFILTERS	Поисковые фильтры	
+CLANSSEARCH	Искать кланы	
+CLANSCLANLIST	Список кланов	
+CLANSLEGENDRANK	Ранг	
+CLANSLEGENDLEVEL	Уровень	
+CLANSLEGENDXP	Опыт	
+CLANSLEGENDTAGNAME	Тэг и название	
+CLANSLEGENDSTATUS	Статус	
+CLANSLEGENDJOINMODE	Режим вступления	
+CLANSTATEOFFICIAL	Официальный	
+CLANSTATEUNOFFICIAL	Неофициальный	
+CLANSTATEFREEFORALL	Открытый	
+CLANSTATEINVITEONLY	Приватный	
+CLANSLISTEMPTYMSG	Нет кланов для отображения	
+CLANSJOINCLAN	Вступить в клан	
+CLANSRELOADLOGO	Перезагрузить	
+CLANSUPDATINGLOGO	Обновление	
+CLANSTATEUNRANKED	Без ранга	
+CLANSVIEWWARSFORUM	Показать клановые войны на форуме	
+CLANSTOPACHMISSING	Этот клан еще не выбрал достижение для отображения	
+CLANSLEGENDROSTER	Состав	
+CLANSMEMBERSEMPTY	В этом клане никто не состоит
+CLANSPLAYERCLANLESS	Вы сейчас не состоите ни в каком клане
+CLANSPLAYERCLANLESSINFOMSG	Вы можете присоединиться к клану из списка или создать свой
+CLANSCREATENEWCLAN	Создать новый клан
+CLANLEADERS	Лидеры	
+CLANLEADER	Лидер	
+CLANMEMBERS	Участники	
+CLANMEMBER	Участник	
+CLANDATALOADERROR	Ошибка загрузки данных, проверьте настройки доступа папки Toribash	
+REWARDSDAILYTITLE	Ежедневная награда	
+REWARDSCLAIM	Получить награду	
+REWARDSCLAIMNETWORKERROR	Ошибка соединения с серверами Toribash, пожалуйста, попробуйте позже	
+REWARDSCLAIMINPROGRESS	Получение награды	
+REWARDSCLAIMSUCCESS	Награда получена	
+REWARDSCLAIMNOREWARD	Нет доступных наград, попробуйте позже	
+REWARDSCLAIMTIMEOUT	Коммуникационная ошибка, перезапустите игру или подключитесь к серверу	
+REWARDSCLAIMERROROTHER	Ошибка получения награды	
+REWARDSNOAVAILABLE	Нет доступных наград	
+REWARDSAVAILABLERESTART	Награда будет доступна при следующем запуске игры	
+REWARDSEXPIRED	Срок действия награды истек :(	
+REWARDSTIMEHOURS	часа
+REWARDSTIMEHOURSRUS	часов		
+REWARDSTIMEHOUR	час	
+REWARDSTIMEMINUTES	минуты	
+REWARDSTIMEMINUTESRUS	минут
+REWARDSTIMEMINUTE	минута	
+REWARDSTIMESECONDS	секунд	
+REWARDSTIMEDAY	день	
+REWARDSTIMEDAYS	дня
+REWARDSTIMEDAYSRUS	дней	
+REWARDSTIMEWEEK	неделя	
+REWARDSTIMEWEEKS	недели	
+REWARDSTIMEWEEKSRUS	недель	
+REWARDSNEXTREWARD	Следующая награда будет доступна через	
+REWARDSTIMELEFT	осталось до истечения награды	
+MATCHMAKEMODGRAPPLING	Grappling	
+MATCHMAKEMODKICKING	Kicking	
+MATCHMAKEMODSTRIKING	Striking	
+MATCHMAKEMODFUN	Fun	
+MATCHMAKERANKEDBELT	Ранговые матчи доступны по достижению Коричневого пояса	
+MATCHMAKERANKEDMODE	Ранговый режим	
+MATCHMAKERANK	Ранг	
+MATCHMAKEFIGHTSTOTAL	всего боев	
+MATCHMAKEWINRATE	процент побед	
+MATCHMAKENOPLAYERS	Нет доступных игроков	
+MATCHMAKEPLAYERSEARCHING	игрок в очереди	
+MATCHMAKEPLAYERSSEARCHING	игроков в очереди	
+MATCHMAKESEARCHING	Поиск соперника	
+MATCHMAKESEARCH	Поиск	
+MATCHMAKESTOPSEARCH	Закончить поиск	
+MATCHMAKEUNRANKEDMODE	Обычная игра	
+MATCHMAKEFINDBESTMATCH1	Искать	
+MATCHMAKEFINDBESTMATCH2	во всех модах	
+MATCHMAKESEARCHSETTINGS1	Поиск	
+MATCHMAKESEARCHSETTINGS2	с настройками	
+MATCHMAKESEARCHCUSTOM	пользовательский	
+MATCHMAKEUPDATINGRANK	Обновление ранговой статистики...	
+MATCHMAKEQUALIFYING	Квалификация
+MATCHMAKERANKUNAVAILABLE	Ранг недоступен
+MATCHMAKEUPDATINGTRENDS	Обновление ваших изменений ранга...
+MATCHMAKEGLOBALRANK	Глобальный ранг
+MATCHMAKEGLOBALRANKING	Глобальный рейтинг
+MATCHMAKEQUALIFICATIONINFO	Вам нужно сыграть 10 рейтинговых битв за сезон, чтобы получить ранговый уровень
+MATCHMAKEGOLDTIERREQUIREDFORRANKDISPLAY	Только игроки с Золотым уровнем и выше могут просмотреть свой ранг 
+MATCHMAKEBESTRANKEDMODS	Лучшие моды
+MATCHMAKERANKEDMODSEMPTY	Нет модов для отображения
+MATCHMAKERANKEDTOPEMPTY	Нет игрков для отображения...
+MATCHMAKEWINLOSE	побед
+MATCHMAKERANKINGTRENDS	Изменения глобального ранга
+MATCHMAKEMOREGAMESREQUIREDFORTRENDS	Сыграйте больше рейтинговых матчей, чтобы просмотреть изменения elo 
+MATCHMAKETOPRANKEDPLAYERS	Лучшие игроки
+MATCHMAKESEASONABOUT	О сезоне
+MATCHMAKEWINSTONEXTTIER	побед до следующего уровня
+MATCHMAKEELOGAININFO	 Вы получаете различное количество elo за выигранные матчи в зависимости от ранга вашего оппонента
+FRIENDSLISTTITLE	Список друзей
+FRIENDSLISTJOINROOM	Присоединиться к лобби
+FRIENDSLISTLEGENDPLAYER	ИГРОК
+FRIENDSLISTLEGENDROOM	ЛОББИ
+FRIENDSLISTREFRESH	Обновить
+FRIENDSLISTADDFRIEND	Добавить нового друга
+FRIENDSLISTEMPTY	Список друзей пуст
+FRIENDSLISTEMPTYINFO	Добавляйте других игроков или целые кланы в ваш список друзей, чтобы узнать, когда они в сети!
+FRIENDSLISTSEARCHDEFAULT	Напишите имя или тег клана со скобками
+BUTTONSAVE	Сохранить
+BUTTONDISCARD	Отменить
+BUTTONCANCEL	Отменить
+BUTTONCONTINUE	Продолжить
+BUTTONCONTINUENOSAVE	Выйти без сохранения
+BUTTONADD	Добавить
+BUTTONCREATE	Создать
+BUTTONUPLOAD	Загрузить в сеть
+BUTTONVIEW	Просмотреть
+BUTTONSEARCH	Найти
+BUTTONSUBMIT	Подтвердить
+WORDTOTAL	всего
+WORDTURN	ход
+WORDGAMES	игр
+WORDFIGHTS	битв
+WORDTIMES	раз
+WORDIN	в
+WORDTC	торикредитов
+WORDDONE	готово
+WORDVS	vs
+WORDNONE	пусто
+WORDOPTIONAL	опционально
+CHATCENSOREDMESSAGE	Ваше сообщение содержит запрещенное слово, которое не будет отображено для других игроков. 
+MOVEMEMORYLOADERROR	Произошла ошибка при загрузки данных MoveMemory.
+MOVEMEMORYSAVING	Сохранение движения
+MOVEMEMORYENTERMOVENAME	Введите название движения
+MOVEMEMORYENTERMOVEDESCOPT	Введите описание движения (необязательно)
+MOVEMEMORYENTERMODNAMEOPT	Введите название мода (необязательно)
+MOVEMEMORYMODNAMEEMPTYERROR	Название движения не может быть пустым!
+MOVEMEMORYMOVESAVEERRORPERMS	Произошла ошибка при сохранении движения, проверьте настройки доступа к папке Toribash.
+MOVEMEMORYERRORNOTINGAME	Вам нужно находиться в бою, чтобы записать движение.
+MOVEMEMORYERRORSTOPMOVE	Вам нужно закончить текущее движение, чтобы записать новое.
+MOVEMEMORYRECORDINGMOVE	Запись движения
+MOVEMEMORYERRORUPDATINGDATA	Произошла ошибка при обновлении данных MoveMemory, изменения не внесены.
+MOVEMEMORYNOMOVESFOUND	Движения не найдены
+MOVEMEMORYDELETEMOVECONFIRM	Вы уверены, что хотите удалить это движение? Это действие необратимо.
+MOVEMEMORYALLMOVES	ВСЕ ДВИЖЕНИЯ
+MOVEMEMORYSUGGESTEDMOVES	РЕКОМЕНДУЕМЫЕ ДВИЖЕНИЯ
+QUESTSNAMETYPE1	Ежедневная тренировка
+QUESTSNAMETYPE2	Машина убийств
+QUESTSNAMETYPE3	Танк
+QUESTSNAMETYPE4	Костолом
+QUESTSNAMETYPEDECAP	Охотник за головами
+QUESTSPLAYREQ	Сыграйте
+QUESTSWINREQ	Выиграйте
+QUESTSGETREQ	Получите
+QUESTSGETREQ2	очков в боях
+QUESTSDECAPREQ	Обезглавьте игроков
+QUESTSDISMEMBERREQ	Оторвите конечности соперников
+QUESTSMATCHMAKEREQ	во время соревновательной игры
+QUESTSOFFICIALREQ	в официальных лобби
+QUESTSCLAIMREWARD	Забрать награду
+QUESTSUPDATING	Обновление данных ваших заданий
+QUESTSBYDECAP	с обезглавливанием
+LUASCRIPTSNAME	Lua скрипты
+LUASCRIPTSTHIRDPARTYWARNING1	Всегда обращайте внимание на сторонние скрипты, которые вы запускаете.
+LUASCRIPTSTHIRDPARTYWARNING2	Мошеннические скрипты могут изменять, стирать или красть ваши данные.
+LUASCRIPTSTHIRDPARTYWARNING3	Запускайте только скрипты, проверенные командой Toribash.
+LUASCRIPTSFORUMBOARD	Список скриптов на форуме
+LUAMALICIOUSWARNING	ПОТЕНЦИАЛЬНО МОШЕННИЧЕСКИЙ СКРИПТ
+LUAFILEACCESSWARNING	СКРИПТ МОЖЕТ ПОЛУЧАТЬ ДОСТУП К ДРУГИМ ФАЙЛАМ
+LUAOTHERSCRIPTSWARNING	СКРИПТ ЗАГРУЖАЕТ ДРУГИЕ СКРИПТЫ
+LUALOADSCRIPT	Загрузить скрипт
+LUASHOWSOURCE	Показать код скрипта
+LUAVIEWINGSORCE	Просмотр кода скрипта
+ERRORCREATINGFILE	Произошла ошибка при создании файла
+REPLAYSSAVING	Сохранение повтора
+REPLAYSDEFAULTPATH	Файл повтора будет сохранен в папку 'my replays'
+REPLAYSENTERNAME	Введите название повтора
+REPLAYSERROREMPTYNAME	Название повтора не может быть пустым
+REPLAYSERRORCHARACTERS	Название повтора может содержать только буквы, цифры, нижние подчеркивания, пробелы и тире
+REPLAYSERRORRENAMING	Ошибка с переименованием повтора, пожалуйста, измените название в меню реплеев
+REPLAYSLOCAL	Локальные повторы
+REPLAYSSEARCH	Поиск
+REPLAYSCOMMUNITY	Повторы сообщества
+REPLAYSUPDATINGCACHE	Обновление кэша повторов
+REPLAYSERRORREADINGFILE	Произошла ошибка при чтении файла повтора
+REPLAYSERRORUPDATINGFILE	Произошла ошибка при обновлении файла повтора
+REPLAYSERRORUPDATINGNAME	Произошла ошибка при обновлении названия повтора
+REPLAYSERRORREADINGCACHE	Произошла ошибка при чтении файла кэша повтора
+REPLAYSERRORUPDATINGTAGS	Произошла ошибка обновлении тегов повтора
+REPLAYSUPDATINGCOMMUNITY	Загрузка данных повторов,\nпожалуйста, подождите...
+REPLAYSFILTERSDATE	по дате загрузки
+REPLAYSFILTERSRATING	по рейтингу
+REPLAYSFILTERSPOPULARITY	по популярности
+REPLAYSFILTERSTAGGED	с тегами
+REPLAYSFILTERSBYTAG	Поиск по тегам
+REPLAYSFILTERSBY	загружен
+REPLAYSFILTERSUPLOADER	Поиск по автору
+REPLAYSBACKTOALLREPLAYS	НАЗАД КО ВСЕМ ПОВТОРАМ
+REPLAYSMATCHBY	Совпадение по
+REPLAYSAUTHORAUTOSAVE	автосохранение
+REPLAYSAUTHORBY	от
+REPLAYSLOADINGREPLAY	Загрузка повтора...
+REPLAYSADDFOLDER	Добавить папку
+REPLAYSTAGSMODIFYING	Изменение
+REPLAYSTAGSNAME	теги повтора
+REPLAYSPOPULARTAGS	Популярные Теги
+REPLAYSASSIGNEDTAGS	Выбранные теги
+REPLAYSINPUTTAGHERE	Введите свой собственный тег здесь
+REPLAYSTAGERRORSHORT	Название тега должно содержать не менее одной буквы
+REPLAYSTAGERRORDUPLICATE	Этот тег уже добавлен к реплею
+REPLAYSMODIFYINGFOLDER	папки
+REPLAYSFOLDERNAME	Имя папки
+REPLAYSERRORDELETING	Произошла ошибка при удалении
+REPLAYSERRORDELETINGFOLDER	папка
+REPLAYSERRORMOVING	Произошла ошибка при перемещении
+REPLAYSERRORMOVINGTO	в
+REPLAYSFOLDERNOTEMPTYDELETEWARNING	Эта папка не пуста. При удалении все повторы внутри будут перемещены в корневую папку. Продолжить?
+REPLAYSERRORRENAMINGFOLDER	Произошла ошибка при переименовании папки
+REPLAYSERRORRENAMINGREPLAY	Произошла ошибка при переименовании повтора
+REPLAYSERRORMOVINGREPLAY	Произошла ошибка при изменении папки повтора
+REPLAYSFOLDERLEVELERROR1	Вы не можете создать больше
+REPLAYSFOLDERLEVELERROR2	уровней папки
+REPLAYSADDINGFOLDER	Добавление новой папки внутри
+REPLAYSNEWFOLDERNAME	Имя новой папки
+REPLAYSFOLDERALPHANUMERIC	Название папки должно состоять из букв или цифр
+REPLAYSERRORADDINGFOLDER	Произошла ошибка при добавлении папки реплеев
+REPLAYSUPLOAD	Загрузить
+REPLAYSUPLOADTORIBASHSERVERS	на сервера Toribash
+REPLAYSNAME	Название
+REPLAYSNAMEINFO	Имя повтора, которое будет отображаться у других игроков
+REPLAYSDESC	Описание
+REPLAYSDESCINFO	Короткое описание вашего повтора
+REPLAYSDESCTIP	Введите описание
+REPLAYSTAGS	Теги
+REPLAYSTAGSINFO	Теги для вашего повтора, разделённые пробелами
+REPLAYSTAGSTIP	Введите теги
+REPLAYSUPLOADCONFIRM	Это загрузит ваш реплей\nна сервера Toribash и сделает его доступным для всех.\nПродолжить?
+REPLAYSMANAGE	Управление
+REPLAYSREPLAY	повтор
+REPLAYSREPLAYS	повторы
+REPLAYSREPLAYNAME	Название повтора
+REPLAYSREPLAYDIR	Папка
+REPLAYSCONFIRMDELETION	Вы уверены, что хотите удалить
+REPLAYSCONFIRMDELETION2	реплей?
+REPLAYSAUTOSAVEOPTION	Автосохранение реплеев
+REPLAYSEMPTYFOLDER	В этой папке нет повторов
+REPLAYSBY	от
+REPLAYSDATACORRUPT	ДАННЫЕ ПОВРЕЖДЕНЫ
+REPLAYSPLAYERS	Игроки 
+REPLAYSMOD	Мод
+REPLAYSCOMMUNITYTITLEINFO	Найти повторы на серверах Toribash
+REPLAYSDOWNLOADINGREPLAY	Скачивание повтора...
+REPLAYSOPENINGREPLAY	Открытие повтора...
+REPLAYSREPLAYSAVEDINFO	Реплей скачан и сохранен в папку 'downloads'
+REPLAYSCOMMUNITYDOUBLECLICKINFO	Щелкните два раза по любому реплею из списка для быстрого просмотра
+REPLAYSCOMMUNITYNOFOUND	повторы не найдены
+REPLAYSLOADPREVIOUS	Загрузить предыдущие
+REPLAYSLOADNEXT	Загрузить следующие
+REPLAYSDOWNLOAD	скачать
+REPLAYSDOWNLOADS	скачанные
+REPLAYSVOTINGON	Голосовать за
+REPLAYSCOMMENT	Комментировать
+REPLAYSVOTECONFIRM1	Вы собираетесь дать этому реплею
+REPLAYSVOTECONFIRM2	из 5 звезд.\nПродолжить?
+REPLAYSCOMMENTSDOWNLOADING	Скачивание комментариев...
+REPLAYSADDCOMMENT	Добавить комментарий
+REPLAYSUPLOADEDON	Загружено
+REPLAYSSAVEREPLAY	Сохранить реплей
+REPLAYSVIEWCOMMENTS	Просмотр комментариев
+REPLAYSMOREBY	Больше от
+REPLAYSREFRESHCACHEPROMPT	Это сбросит ваш кэш реплеев.\nВы уверены, что хотите продолжить?
+REPLAYSERRORREFRESHINGCACHE	Произошла ошибка при обновлении кэша, проверьте настройки доступа к папке Toribash
+MODSDOWNLOADINGMOD	Скачивание мода... 
+NOFILESFOUND	Файлы не найдены
+FILENAME	Имя файла
+MODSRESTARTGAME	Начать новую игру после загрузки мода
+SEARCHNOTE	Начните печатать для поиска...
+SHADERSSAVESHADER	Сохранить шейдер
+SHADERSSAVING	Запись шейдера в файл
+SHADERSINPUTNAME	Введите название шейдера
+SHADERSERRORFILEEXISTS	Шейдер с таким именем уже существует. Это действие перепишет старый файл. 
+SHADERSRESETTODEFAULT	Сбросить настройки
+SHADERSEDITOR	Редактор шейдеров
+SHADERSATMOSNAME	Атмосферы
+SHADERSNAME	Шейдеры
+SETTINGSOTHER	Игра
+SETTINGSABOUT	Об игре
+SETTINGSAUDIO	Звук
+SETTINGSEFFECTS	Эффекты
+SETTINGSGRAPHICS	Графика
+SETTINGSGRAPHICSPRESETS	Настройки графики
+SETTINGSVISUALSQUALITY	Качество графики (может потребоваться перезапуск)
+SETTINGSCUSTOM	Пользовательские
+SETTINGSLOWEST	Картошка
+SETTINGSLOW	Низкие
+SETTINGSMEDIUM	Средние
+SETTINGSHIGH	Высокие
+SETTINGSHIGHEST	RTX 2080 Ti
+SETTINGSRESOLUTION	Разрешение экрана
+SETTINGSADVANCED	Расширенные
+SETTINGSSHADERS	Шейдеры
+SETTINGSFLUIDBLOOD	Объёмная кровь
+SETTINGSFLOORREFLECTIONS	Отражения пола
+SETTINGSSOFTSHADOWS	Мягкие тени
+SETTINGSAMBIENTOCCLUSION	Ambient Occlusion
+SETTINGSRAYTRACING	Трассировка лучей
+SETTINGSFRAMERATE	Количество кадров
+SETTINGSFPS	кадров в секунду
+SETTINGSFPSUNCAPPED	Неограниченное
+SETTINGSGENERAL	Основные
+SETTINGSEFFECTSINFO	Настройки отображения эффектов
+SETTINGSDISABLED	Выключено
+SETTINGSENABLED	Включено
+SETTINGSREPLAYSONLY	Только на повторах
+SETTINGSPLAYERCUSTOMIZATION	Персонализация игрока
+SETTINGSBODYTEXTURES	Текстуры тела
+SETTINGSTRAILS	Следы
+SETTINGSFLAMES	Пламя
+SETTINGSHAIRS	Волосы
+SETTINGSOBJMODELS	3D модели
+SETTINGSEFFECTSVOLUME	Громкость эффектов
+SETTINGSMUSICVOLUME	Громкость музыки
+SETTINGSVCVOLUME	Громкость голосового чата
+SETTINGSVCTOGGLE	Переключение голосового чата
+SETTINGSSOUNDMASTER	Глобальная настройка звуков
+SETTINGSHITEFFECTS	Звуки ударов
+SETTINGSGAMEOVER	Звуки DQ и победы
+SETTINGSREADY	Звук Kiai
+SETTINGSGRIP	Звук Grip
+SETTINGSALERT	Звук Shout
+SETTINGSDISMEMBER	Звук Dismember
+SETTINGSFIGHTALERT	Звук Fight Alert
+SETTINGSFREEZE	Звук Freeze
+SETTINGSGRADING	Звук Grading
+SETTINGSIMPACT	Звук Impact
+SETTINGSJOINT	Звук Joint
+SETTINGSMENU	Звуки меню
+SETTINGSNONE	Звук None
+SETTINGSPAIN	Звук боли
+SETTINGSSELECTPLAYER	Звук выбора игрока
+SETTINGSSPLASH	Звук Splash
+SETTINGSSWOOSH	Звук Swoosh
+SETTINGSLANGUAGE	Язык
+SETTINGSGAMELANGUAGE	Язык игры
+SETTINGSCHAT	Настройки чата
+SETTINGSCHATTOGGLE	Переключение длины чата
+SETTINGSPROFANITYFILTER	Фильтр чата
+SETTINGSHIDEECHO	Скрыть системные сообщения
+SETTINGSGAMEPLAY	Надстройки геймплея
+SETTINGSMOUSEBUTTONS	Режимы управления мышью
+SETTINGSMOUSEBUTTONS0	Только сгибание / разгибание
+SETTINGSMOUSEBUTTONS1	Все четыре состояния
+SETTINGSMOUSEBUTTONS2	Только напряжение / расслабление 
+SETTINGSBACKGROUNDCLICK	Разрешить нажатия по фону
+SETTINGSAUTOSAVE	Автоматически сохранять повторы
+SETTINGSGAMERULES	Запомнить настройки модов
+SETTINGSMODERNHUD	Расширенный HUD
+SETTINGSTOOLTIP	Расширенная информация о мышцах
+SETTINGSMOVEMEMORY	Включить MoveMemory
+SETTINGSBASEHUDONLY	только базовый HUD
+SETTINGSWINDOWED	Оконный Режим
+SETTINGSWIDTH	Ширина
+SETTINGSHEIGHT	Высота
+SETTINGSONLYDEFAULTSOUNDS	Только звуки по умолчанию
+SETTINGSAPPLY	Применить изменения 
+SETTINGSRESTARTREQUIRED	может потребоваться перезагрузка
+SETTINGSNOCHANGES	Никаких изменений не сделано
+HOTKEYSBASICCONTROLS	Основные настройки управления
+HOTKEYSCAMERACONTROLS	Настройки управления камерой
+HOTKEYSHOLDALL	Напрячь все / расслабить все
+HOTKEYSHOLDRELAX	Напрячь / расслабить мышцу
+HOTKEYSCONTRACTEXTEND	Согнуть / разогнуть мышцу
+HOTKEYSGRABUNGRAB	Переключение состояния руки (схватить / отпустить)
+HOTKEYSGRABALL	Переключение состояния обеих рук
+HOTKEYSSAVEREPLAY	Сохранить повтор
+HOTKEYSTORIGHOST	Переключение призрака игрока
+HOTKEYSPLAYERSGHOST	Переключение призрака обоих игроков
+HOTKEYSTURN	Закончить ход / пропустить один кадр
+HOTKEYSCHAT	Настройки управления чатом
+HOTKEYSOPENCHAT	Открыть чат
+HOTKEYSTOGGLECHAT	Показать больше строк чата
+HOTKEYSSCROLLCHAT	Прокрутить чат вверх / вниз
+HOTKEYSSCROLLCHATMAX	Прокрутить к началу / концу чата
+HOTKEYSREPLAYS	Горячие клавиши повторов
+HOTKEYSREPLAYRESTART	Перезапустить повтор
+HOTKEYSREPLAYPAUSE	Остановить повтор
+HOTKEYSREPLAYEDIT	Изменить повтор
+HOTKEYSREPLAYKEYFRAME	Сохранить keyframe
+HOTKEYSREPLAYKEYFRAMESCLEAR	Стереть все keyframe
+HOTKEYSREPLAYNEXT	Запустить следующий повтор
+HOTKEYSREPLAYPREV	Запустить предыдущий повтор
+HOTKEYSOTHER	Другие горячие клавиши
+HOTKEYSMODLIST	Открыть список модов
+HOTKEYSSHADERS	Открыть шейдеры и атмосферы
+HOTKEYSGAMERULES	Открыть правила игры
+HOTKEYSFULLSCREEN	Перейти в полноэкранный режим
+HOTKEYSCAMERAMODES	Изменить режимы камеры
+TUTORIALSLEAVINGPROMPT	Выход из режима обучения.\nВ случае выхода, вам придётся пройти весь урок с начала.
+EVENTSLEAVINGPROMPT	Выход из режима конкурса.\nТекущий повтор будет сохранен, и вы сможете продолжить редактировать его позже.
+TUTORIALSCONTINUETONEXT	Переход к следующему уроку
+TUTORIALSBACKTOMAIN	Возврат в главное меню
+TUTORIALSINTRONAME	Знакомство с Toribash
+TUTORIALSINTRODESC	Познакомься с Сенсеем и начни свой путь в Toribash
+TUTORIALSPUNCHNAME	Обучение боксированию
+TUTORIALSPUNCHDESC	Узнайте основы ударов руками в Toribash
+TUTORIALSKICKNAME	Обучение ударам ногами
+TUTORIALSKICKDESC	Узнайте, как атаковать своего оппонента ногами
+TUTORIALSCHALLENGEUKENAME	Битва с Uke
+TUTORIALSCHALLENGEUKEDESC	Проверь свои навыки в бою против Uke
+TUTORIALSCOMEBACKPRACTICENAME	Тренировка камбека
+TUTORIALSCOMEBACKPRACTICEDESC	Тренируйте ваши навыки возвращения к оппоненту, пока ловите Uke
+TUTORIALSLOCKED	Завершите остальные уроки или получите больше Qi, чтобы разблокировать урок
+TUTORIALSVIEWALLNAME	Просмотреть все уроки
+TUTORIALSVIEWALLDESC	Вернитесь к любому завершённому уроку
+DISCORDRPCINTUTORIAL	Режим обучения
+NAVBUTTONNEWS	Новости
+NAVBUTTONSTORE	Магазин
+NAVBUTTONACCOUNT	Профиль
+REWARDSTIMEMONTHS	месяца
+REWARDSTIMEYEAR	год
+REWARDSTIMEYEARS	года
+REWARDSTIMEMONTHSRUS	месяцев
+REWARDSTIMEYEARSRUS	лет
+SETTINGSREPLAYCACHE	Показать настройки скорости повтора
+SETTINGSREPLAYCACHESECONDPLAYTHROUGH	Включить со второго проигрывания повтора
+SETTINGSREPLAYMEMSIZE	Объём памяти кэша
+SETTINGSREPLAYFRAMES	фреймов
+HOTKEYSREPLAYSPEED	Изменить скорость повтора
+USERBARTCINFO	За Торикредиты вы можете покупать предметы, соответсвующие вашему поясу.
+USERBARSTINFO	За Шиай Токены вы можете покупать премиум-предметы в обход ограничений по поясу.
+ACCOUNTTITLEINFO	Информация о профиле
+ACCOUNTGETTINGINFO	Загружаем информацию о профиле...
+ACCOUNTINFOERROR	Что-то пошло не так, попробуйте снова
+STOREDOWNLOADINGMODEL	Загрузка предмета...
+STOREDOWNLOADINGSET	Загрузка предметов...
+STOREGETMORE	Купить больше
+STOREBUYFOR	Купить за
+STOREPURCHASECONFIRM	Вы уверены, что хотите купить
+STOREPURCHASEFOR	за
+STOREPURCHASEYOUWILLHAVELEFT1	у вас останется
+STOREPURCHASEYOUWILLHAVELEFT2	после покупки.
+STOREREQUIRES	Не хватает
+STOREREQUIRESQI	Qi
+STOREVIEWING	Просмотр
+STOREAVAILABLEITEMS	Доступные предметы
+STOREEXPENSIVEITEMS	Дорогие предметы
+STOREUSDITEMS	Предметы за $
+STORELOCKEDITEMS	Недоступные или заблокированные предметы
+STORESEARCHNOITEMS	По вашему запросу ничего не найдено
+STORESEARCHSTRINGSHORT	Запрос должен содержать не менее 3 символов!
+SEARCHRESULTS1	Результаты поиска по
+SEARCHRESULTS2	
+WORDSEARCH	Поиск
+STORESEARCHHINT	Начните писать название предмета...
+STOREDISCOUNTEDPRICE	Цена со скидкой
+WORDTORICREDITS	Торикредитов
+WORDSHIAITOKENS	Шиай токенов
+STOREBUYWITH	Купить за
+STOREVIEWIN1	Показать
+STOREVIEWIN2	в магазине
+STORELOADING	Загрузка данных магазина, пожалуйста, подождите...
+STORESALE1	Распродажа
+STORESALE2	
+STORENOCOLORSALE	На данный момент нет цветов со скидкой, возвращайтесь позже!
+STORENOSALE	На данный момент нет предметов со скидкой, возвращайтесь позже!
+STORECOLORS	Цвета
+STORECOLORSNAME	Цвета
+STORECOLORSDESC	Джоинты, градиенты и другие предметы для изменения цвета
+STORETEXTURES	Текстуры
+STORETEXTURESNAME	Текстуры
+STORETEXTURESDESC	Текстуры позволяют создать уникальный образ вашего Тори
+STOREADVANCED	3D-предметы и причёски
+STOREADVANCEDNAME	3D-предметы и причёски
+STOREADVANCEDDESC	3D предметы, причёски и другие продвинутые апгрейды для вашего Тори
+STOREACCOUNT	Профиль
+STOREACCOUNTDESC	Внутриигровая валюта, бустеры и подписки
+STOREPURCHASINGITEM	Покупка предмета...
+STOREPURCHASEERROR	Ошибка при покупке
+STOREPURCHASESERVERERROR	Ошибка сервера, повторите позже
+STOREPURCHASEERRORUNDEF	Неизвестная ошибка при покупке. Обратитесь к администратору.
+STOREPURCHASESUCCESSFUL	Поздравляем с покупкой! Хотите активировать новый предмет?
+STOREPURCHASESUCCESSFULUNPACK	Поздравляем с покупкой! Хотите распаковать купленный сет?
+SETTINGSAUTOUPDATE	Автоматически обновлять текстуры и предметы других игроков
+ACCOUNTUSERNAME	Ник
+ACCOUNTUSERID	ID аккаунта
+ACCOUNTGAMESPLAYEDTODAY	Игр сыграно сегодня
+ACCOUNTGAMESWONTODAY	Игр выиграно сегодня
+ACCOUNTTCEARNINGSTODAY	Торикредитов получено от боёв
+ACCOUNTQIRESETS	Время до обновления ежедневного лимита Qi
+ACCOUNTSTATUS	Статус профиля
+ACCOUNTSUSPENDED	Заблокирован
+ACCOUNTGREYLISTED	Покупка и обмен предметов временно недоступны
+ACCOUNTNOEMAIL	Почта не привязана
+ACCOUNTAWAITINGCONFIRMATION	Ожидание подтверждения почты
+ACCOUNTSUSPENDEDINFO	Ваш аккаунт был заблокирован модераторами. Вы можете обжаловать данное решение на форуме.
+ACCOUNTGREYLISTEDINFO	Вы временно не можете совершать покупки. Дождитесь окончания данного ограничения, либо свяжитесь с администратором для досрочного снятия ограничений.
+ACCOUNTEMAILERRORINFO	Возможности вашего аккаунта ограничены. Пожалуйста, подтвердите адрес электронной почты, чтобы снять ограничения.
+STOREITEMUNAVAILABLE	Вы не можете приобрести данный предмет.
+REPLAYUPLOADERROR	Невозможно загрузить повтор
+REPLAYUPLOADFAILED	Ошибка при загрузке повтора, повторите позже
+REPLAYUPLOADINPROGRESS	Загружаем повтор...
+ACCOUNTSWITCH	Сменить аккаунт
+REPLAYUPLOADSUCCESSFUL	Ваш реплей успешно загружен!
+EVENTSUPLOADINGENTRY	Отправка повтора для участия...	
+EVENTSTRYNOTGETDISMEMBERED	Попытайся остаться в целости в следующий раз!	
+EVENTSTRYSTAYONPLATFORM	Попытайся остаться на движущейся платформе в следующий раз!	
+EVENTSNEWGAME	Новая игра	
+EVENTSREWIND	Перезапустить этот повтор	
+TUTORIALNODATAFOUND	Данные не найдены, пожалуйста, попробуйте ещё раз после завершения загрузки	
+STOREDISCOUNTCHEAPER1	Скидка	
+STOREDISCOUNTCHEAPER2		
+WORDRANKED	рейтинговый
+QUESTSRANKEDMODE	в рейтинговом режиме 
+NEWSDOWNLOADING	Скачивание последних новостей, пожалуйста, подождите...
+MATCHMAKERANKINGMODS	Рейтинг по модам
+MATCHMAKESPOT	место
+MATCHMAKESPOTS	мест
+DISCORDRPCMATCHMAKING	Поиск соперника
+MATCHMAKECANTSEARCH	Нельзя начать поиск во время сетевой игры
+MATCHMAKENORANKCHANGES	Изменения ранга отсутствуют
+MATCHMAKEGLOBALRANKINGDESC	Просмотр вашего рейтинга и лучших игроков сезона
+MATCHMAKENORANKEDQUEST	У вас нет рейтинговых заданий.\nПожалуйста, обновите ваши задания, чтобы получить одно.
+MATCHMAKEVIEWQUESTS	Просмотреть свои задания
+QUEUELISTDROPDOWNCLANLEADER	Лидер
+QUEUELISTDROPDOWNADDFRIEND	Добавить в друзья
+QUEUELISTDROPDOWNREMOVEFRIEND	Удалить из друзей
+QUEUELISTDROPDOWNREPORT	Пожаловаться на игрока
+QUEUELISTDROPDOWNKICK	Кикнуть
+QUEUELISTDROPDOWNBAN	Забанить
+QUEUELISTDROPDOWNIPBAN	Бан по IP
+QUEUELISTDROPDOWNOP	Сделать оператором
+QUEUELISTDROPDOWNDEOP	Убрать оператора
+QUEUELISTDROPDOWNWHISPER	Приватный чат
+QUEUELISTDROPDOWNMUTE	Замьютить
+QUEUELISTDROPDOWNUNMUTE	Снять мьют
+QUEUELISTDROPDOWNSPECTATEALL	Отправить всех в наблюдатели
+QUEUELISTDROPDOWNSPECALLCONFIRM	Вы уверены, что хотите отправить всех игроков в наблюдатели? Вы не сможете восстановить порядок игроков автоматически.
+QUEUELISTDROPDOWNMUTEALL	Замьютить всех
+QUEUELISTDROPDOWNUNMUTEALL	Снять мьют со всех
+QUEUELISTDROPDOWNFSPEC	Отправить в наблюдатели
+QUEUELISTDROPDOWNFENTER	Поставить в очередь
+QUEUELISTDROPDOWNIGNORE	Игнорировать
+QUEUELISTDROPDOWNNUDGE	Изменить позицию в очереди
+QUEUELISTDROPDOWNNUDGEUP	Поднять на 1 позицию вверх
+QUEUELISTDROPDOWNNUDGEDOWN	Опустить на 1 позицию вниз
+QUEUELISTDROPDOWNNUDGETOPOSITION	Изменение позиции
+QUEUELISTDROPDOWNNUDGECHOOSE	Выбрать позицию
+QUEUELISTDROPDOWNNUDGECUSTOM	Пользовательская позиция
+QUEUELISTDROPDOWNUNIGNORE	Перестать игнорировать
+QUEUELISTDROPDOWNMASSCONTROLS	Управление сервером
+QUEUELISTDROPDOWNSCRAMBLE	Перемешать очередь
+QUEUELISTDROPDOWNSCRAMBLECONFIRM	Вы уверены, что хотите перемешать очередь? Вы не сможете восстановить порядок игроков автоматически.
+REPORTSREPORTINGPLAYER	Жалоба на игрока
+REPORTSREPORTREASON	Причина жалобы:
+REPORTSREASONHARASSMENT	Оскорбление / токсичное поведение
+REPORTSREASONSPAM	Спам
+REPORTSREASONCHEATING	Жульничество (подставные игры, уклонение от противников в ранговом режиме и т.п.)
+REPORTSREASONSCAMMING	Мошенничество (во время дуэли и т.п.)
+REPORTSREASONOTHER	Другая
+REPORTSSUCCESSDEFAULT	Ваша жалоба была успешно отправлена, команда Toribash рассмотрит ее в скором времени.\nЕсли ваша проблема требует немедленного решения, вы можете также обратиться к команде Toribash на сервере Toribash в Discord.
+REPORTSSUCCESSSCAMMING	Ваша жалоба была успешно отправлена. Market Squad рассмотрит ее в скором времени.\nПожалуйста, следите за темой жалобы до момента вынесения решения по ней, в случае возникновения дополнительных вопросов. Если вы хотите добавить дополнительные реплеи, скриншоты или другую информацию к жалобе, пожалуйста, сделайте это в теме.
+REPORTSEXTRAMESSAGE	Дополнительная информация:
+REPORTSEXTRAMESSAGETIP	Добавьте любую дополнительную информацию, которую вы считайте может быть полезной
+REPORTSCHATLOGINFO	История сообщений в лобби и запись последнего боя будут автоматически прикреплены к жалобе
+REPORTSABUSENOTICE	Злонамеренное использование системы жалоб приведет к блокировке вашего аккаунта на форумах и игровых серверах Toribash
+MESSAGEPLEASEWAIT	Пожалуйста, подождите...
+BUTTONCLOSEWINDOW	Закрыть окно
+INVENTORY3DITEMFOR	3D предмет для
+STOREITEMSEDIT	Изменить
+STOREITEMSCUSTOMIZE	Персонализировать
+STORESHOWEMPTYSETS	Показать пустые сеты
+STOREITEMUPGRADEFOR	Апгрейд за
+STOREITEMUPGRADEPRICEFREE	0 торикредитов
+STOREINVENTORYRELOAD	Перезагрузить инвентарь
+STOREITEMRETEXTURABLE	С изменяемой текстурой
+STOREITEMSCLEANSELECTION	Очистить выбор
+STOREDIALOGUPGRADE1	Вы уверены, что хотите улучшить
+STOREDIALOGUPGRADE2	до уровня
+DISCORDSERVER	Discord сервер Toribash
+REPORTSREPORTTHREAD	Тема с жалобой
+STOREITEMPREVIEW	Просмотр
+REQUESTUNKNOWNERROR	Неизвестная ошибка
+REQUESTCONNECTIONERROR	Ошибка соединения
+STOREREQUESTNOTHAIRSTYLE	Этот предмет не является прической
+STOREVANILLAENTERMP	При предпросмотре предмета на вашем персонаже, вы будете отключены от лобби
+DISCORDRPCPLAYINGSPEVENT	Участвует в SP-соревновании
+EVENTSVIEWIGNALLEVENTS	Просмотр всех соревнований
+EVENTSLIVE	Live
+EVENTSALLEVENTS	Все соревнования
+EVENTSALLEVENTSDESC	Просмотреть победителей прошедших соревнований или сыграть в них
+EVENTSWONBY	Победитель соренования:
+EVENTSJUDGINGINPROGRESS	Судейство соренования еще не завершено
+EVENTSVIEWMOREINFO	Больше информации
+EVENTSPLAY	Играть
+EVENTSENDSIN	Заканчивается через
+EVENTSENDED	Закончилось
+EVENTSENDEDAGO	назад
+EVENTSLOADING	Загрузка информации о сореновании...
+EVENTSMYSTATS	Моя статистика
+EVENTSCOMMUNITYOBJECTIVE	Цель сообщества
+EVENTSGAMESWON	Матчей выиграно
+EVENTSGLOBALPRIZEWILLBESENT	Награда за глобальную цель будет добавлена на ваш аккаунт после завершения, события если вы сыграли 10 или более матчей
+EVENTSLOADINGTOPPLAYERS	Загрузка топа игроков
+EVENTSTOPLIST	Топ игроков
+EVENTSCOMPLETED	Завершено
+EVENTSCLAIM	Получить
+EVENTSCLAIMALL	Получить все награды
+EVENTSPRIZESLOCKED	Заблокированные призы
+EVENTSWINSTOUNLOCK	побед для разблокировки
+EVENTSALLREWARDSCLAIMED	Все награды собраны!
+EVENTSKEEPPLAYINGTOGETINTOPLIST	Продолжайте играть, чтобы попасть в список лучших игроков для получения еще лучшей награды в конце чемпионата!
+EVENTSLOADCUSTOMREPLAY	Открыть повтор (CTRL + L)
+REPLAYSAUTOSAVEDREPLAY	Авосохраненный реплей
+REPLAYSSELECTREPLAYTOPROCEED	Выберете повтор для продолжения
+SETTINGSBROADCASTS	Оповещения о глобальных сообщениях
+SETTINGSSHOWINMP	Показывать только в мультиплеере
+SETTINGSALWAYSSHOW	Всегда показывать
+REPORTSCONFIRMATION	Вы уверены, что хотите отправить жалобу?
+REPORTSLONGWAITMESSAGE	Это занимает чуть больше времени, чем обычно...\nДанное окно может быть закрыто, вы получите уведомление, когда жалоба будет отправлена.
