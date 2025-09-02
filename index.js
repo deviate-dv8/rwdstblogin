@@ -25,6 +25,20 @@ app.get("/claim", (req, res) => {
     return res.json({ result: lastString });
   });
 });
+app.get("/claim-full", (req, res) => {
+  exec("bash ./dailyScript.sh", (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error: ${error.message}`);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    if (stderr) {
+      console.error(`Stderr: ${stderr}`);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    const outputLines = stdout.trim().split("\n");
+    return res.json(outputLines);
+  });
+});
 app.listen(3000, () => {
   console.log("Server is running on http://localhost:" + PORT);
 });

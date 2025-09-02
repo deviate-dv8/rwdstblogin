@@ -1,5 +1,13 @@
-FROM scottyhardy/docker-wine:latest AS wine
-FROM node:latest
+FROM scottyhardy/docker-wine:latest
+
+# Install Node.js
+RUN apt-get update && apt-get install -y curl \
+    && curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs \
+    && apt-get clean
+
+# Verify installations
+RUN wine --version && node --version
 
 # Install required packages
 RUN apt-get update && apt-get install -y \
