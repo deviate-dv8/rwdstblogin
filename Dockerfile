@@ -21,15 +21,6 @@ COPY . /app
 # Make the script executable
 RUN chmod +x /app/dailyScript.sh
 
-# Create necessary directories
-RUN mkdir -p /var/run
-RUN touch /var/log/cron.log
-
-# Add the cron job
-RUN echo "0 0 * * * TZ=UTC /app/dailyScript.sh >> /var/log/cron.log 2>&1" > /etc/cron.d/daily-job
-RUN chmod 0644 /etc/cron.d/daily-job
-RUN crontab /etc/cron.d/daily-job
-
 RUN npm install
 
 EXPOSE 3000
