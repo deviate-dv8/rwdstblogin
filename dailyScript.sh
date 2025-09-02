@@ -15,6 +15,7 @@ parse_user_info() {
     declare -A userInfo
 
     # Extract values and store them in the associative array
+    userInfo[USERNAME]=$(echo "$tbUserInfo" | grep -oP "USERNAME 0;\K[^;]+")
     userInfo[USERID]=$(echo "$tbUserInfo" | grep -oP "USERID 0;\K[0-9]+")
     userInfo[TC]=$(echo "$tbUserInfo" | grep -oP "TC 0;\K[0-9]+")
     userInfo[ST]=$(echo "$tbUserInfo" | grep -oP "ST 0;\K[0-9]+")
