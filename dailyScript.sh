@@ -47,11 +47,10 @@ echo "Generating tb_login.dat..."
     echo -ne "\r\0\n\0"
     echo -n "pass $password" | sed 's/./&\x00/g' | tr -d '\n'
     echo -ne "\r\0\n\0"
-} > ./Light_Config/tb_login.dat
+} > ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/tb_login.dat
 
 # move Light_Config to /.wine/drive_c/users/$USER/Saved\ Games	/Toribash/
 mkdir -p ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/
-cp ./Light_Config/tb_login.dat ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/tb_login.dat
 cp ./Light_Config/custom.cfg ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/custom.cfg
 cp ./Light_Config/temp.cfg ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/temp.cfg
 
