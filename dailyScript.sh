@@ -5,7 +5,17 @@ password=$TB_PASSWORD
 # Function to fetch user info
 fetch_user_info() {
     local username=$1
-    curl -s -X GET "https://forum.toribash.com/tori_ingame_userinfo.php?v=0&username=${username}"
+
+    while true; do
+        response=$(curl -s -X GET "https://forum.toribash.com/tori_ingame_userinfo.php?v=0&username=${username}")
+        if [ $? -eq 0 ]; then
+            echo "$response"
+            break
+        else
+            echo "Network error. Retrying..."
+            sleep 2 # Wait for 2 seconds before retrying
+        fi
+    done
 }
 
 # Function to parse user info and return key-value pairs
