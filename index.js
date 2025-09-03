@@ -9,38 +9,55 @@ dotenv.config();
 const app = express();
 app.use(express.static("screenshots"));
 const PORT = 3000;
-
 const screenshotsDir = "./screenshots";
-
+let is_claiming = false;
 app.get("/", (req, res) => {
   res.json({ message: "Hello World" });
 });
 app.get("/claim", (req, res) => {
+  if (is_claiming) {
+    return res
+      .status(429)
+      .json({ error: "A claim process is already running." });
+  }
+  is_claiming = true;
   exec("bash ./dailyScript.sh", (error, stdout, stderr) => {
     if (error) {
       console.error(`Error: ${error.message}`);
+      is_claiming = false;
       return res.status(500).json({ error: "Internal Server Error" });
     }
     if (stderr) {
       console.error(`Stderr: ${stderr}`);
+      is_claiming = false;
       return res.status(500).json({ error: "Internal Server Error" });
     }
     const outputLines = stdout.trim().split("\n");
     const lastString = outputLines[outputLines.length - 1];
+    is_claiming = false;
     return res.json({ result: lastString });
   });
 });
 app.get("/claim-full", (req, res) => {
+  if (is_claiming) {
+    return res
+      .status(429)
+      .json({ error: "A claim process is already running." });
+  }
+  is_claiming = true;
   exec("bash ./dailyScript.sh", (error, stdout, stderr) => {
     if (error) {
       console.error(`Error: ${error.message}`);
+      is_claiming = false;
       return res.status(500).json({ error: "Internal Server Error" });
     }
     if (stderr) {
       console.error(`Stderr: ${stderr}`);
+      is_claiming = false;
       return res.status(500).json({ error: "Internal Server Error" });
     }
     const outputLines = stdout.trim().split("\n");
+    is_claiming = false;
     return res.json(outputLines);
   });
 });
