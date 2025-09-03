@@ -1,11 +1,16 @@
 import express from "express";
 import dotenv from "dotenv";
 import { exec } from "child_process";
+import fs from "fs";
+import path from "path";
 
 dotenv.config();
 
 const app = express();
+app.use(express.static("screenshots"));
 const PORT = 3000;
+
+const screenshotsDir = "./screenshots";
 
 app.get("/", (req, res) => {
   res.json({ message: "Hello World" });
@@ -39,6 +44,21 @@ app.get("/claim-full", (req, res) => {
     return res.json(outputLines);
   });
 });
+app.get("/latest", (req, res) => {
+  const latestScreenshotFilename = fs
+    .readdirSync(screenshotsDir)
+    .map((file) => ({
+      file,
+      time: fs.statSync(path.join(screenshotsDir, file)).mtime.getTime(),
+    }))
+    .sort((a, b) => b.time - a.time) // Sort by modification time, descending
+    .map(({ file }) => file)[0]; // Get the latest file
+  if (!latestScreenshotFilename) {
+    return res.status(404).json({ error: "No screenshots found" });
+  }
+  res.redirect(`./${latestScreenshotFilename}`);
+});
+app.get("/screenshots", (req, res) => {});
 app.listen(3000, () => {
   console.log("Server is running on http://localhost:" + PORT);
   console.log("TB_USER: " + process.env.TB_USERNAME);
