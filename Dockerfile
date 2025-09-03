@@ -15,6 +15,11 @@ RUN apt-get update && apt-get install -y \
     cron \
     curl \
     lua5.4 \
+    imagemagick \
+    scrot \
+    x11-utils \
+    xdotool \
+    fluxbox \
     && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
     && apt-get clean \
@@ -25,7 +30,6 @@ COPY . /app
 
 RUN mkdir -p /app/Light_Config && chmod 755 /app/Light_Config
 RUN chmod +x /app/dailyScript.sh
-
 RUN npm install
 
 # Setup cron job (using UTC)
@@ -34,6 +38,9 @@ RUN echo "CRON_TZ=UTC\n0 0 * * * cd /app && ./dailyScript.sh >> /var/log/cron.lo
 
 # Log file
 RUN touch /var/log/cron.log && chmod 666 /var/log/cron.log
+
+# Create screenshots directory
+RUN mkdir -p /app/screenshots && chmod 755 /app/screenshots
 
 EXPOSE 3000
 
