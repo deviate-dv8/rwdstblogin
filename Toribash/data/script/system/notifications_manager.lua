@@ -825,7 +825,6 @@ function Notifications:showMain()
 		Notifications:showLoginRewards()
 		TB_MENU_NOTIFICATIONS_LASTSCREEN = 1
 		TBMenu:showNavigationBar(navButtons, true, true, 1)
-		claim_reward()
 	else
 		for _, v in pairs(navButtons) do
 			if v.sectionId == TB_MENU_NOTIFICATIONS_LASTSCREEN then
