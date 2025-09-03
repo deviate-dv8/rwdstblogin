@@ -147,11 +147,6 @@ take_screenshot() {
 rewardStatus="$(claimReward $userId)"
 echo "Reward Status: $rewardStatus"
 
-if [[ $rewardStatus == "err" ]]; then
-    echo "Error checking reward status."
-    exit 1
-fi
-
 if [[ $rewardStatus == "claimable" ]]; then
     echo "Starting Toribash client..."
     
@@ -163,19 +158,17 @@ if [[ $rewardStatus == "claimable" ]]; then
     # Wait for X server to start
     sleep 3
     
-    # Start a simple window manager to help with window management
+    # Start a simple window manager
     fluxbox &
     FLUXBOX_PID=$!
     
     sleep 2
     
     # Start the Toribash client
-    echo "Executing: wine ./Toribash/toribash.exe"
     wine ./Toribash/toribash.exe &
     TB_PID=$!
     
     # Wait for the client to initialize
-    echo "Waiting for client to initialize..."
     sleep 10
     
     # Take initial screenshot
@@ -187,7 +180,6 @@ if [[ $rewardStatus == "claimable" ]]; then
     max_attempts=30
     
     while [[ $rewardStatus != "successfully claimed" && $rewardStatus != "claimed" && $attempt -lt $max_attempts ]]; do
-        echo "Waiting for the client to process the reward... (attempt $((attempt+1))/$max_attempts)"
         sleep 10  # Wait for 10 seconds before checking again
         
         # Take screenshot
@@ -195,45 +187,42 @@ if [[ $rewardStatus == "claimable" ]]; then
         take_screenshot "$screenshot_file"
         
         rewardStatus="$(claimReward $userId)"
-        echo "Current reward status: $rewardStatus"
-        
         ((attempt++))
     done
     
     # Take final screenshot
     take_screenshot "./screenshots/final_$(date +%Y%m%d%H%M%S).png"
     
+    # Final reward status check
     if [[ $rewardStatus == "successfully claimed" ]]; then
-        echo "Reward Claimed Successfully!"
+        summary="Reward successfully claimed."
     elif [[ $attempt -ge $max_attempts ]]; then
-        echo "Timeout: Maximum attempts reached"
+        summary="Reward claim timed out after $max_attempts attempts."
     else 
-        echo "Reward processing completed with status: $rewardStatus"
+        summary="Reward processing completed with status: $rewardStatus."
     fi
     
     # Clean up processes
-    echo "Cleaning up processes..."
     if [ ! -z "$TB_PID" ]; then
-        echo "Killing Toribash process (PID: $TB_PID)"
         kill $TB_PID 2>/dev/null || true
     fi
     
     if [ ! -z "$FLUXBOX_PID" ]; then
-        echo "Killing Fluxbox process (PID: $FLUXBOX_PID)"
         kill $FLUXBOX_PID 2>/dev/null || true
     fi
     
     if [ ! -z "$XVFB_PID" ]; then
-        echo "Killing Xvfb process (PID: $XVFB_PID)"
         kill $XVFB_PID 2>/dev/null || true
     fi
     
     # List screenshots taken
-    echo "Screenshots taken:"
     ls -la ./screenshots/
     
 elif [[ $rewardStatus == "claimed" ]]; then
-    echo "Reward already claimed."
+    summary="Reward already claimed."
 else
-    echo "No reward available."
+    summary="No reward available."
 fi
+
+# Final summary
+echo "$summary"
