@@ -58,7 +58,6 @@ app.get("/latest", (req, res) => {
   }
   res.redirect(`./${latestScreenshotFilename}`);
 });
-app.get("/screenshots", (req, res) => {});
 app.listen(3000, () => {
   console.log("Server is running on http://localhost:" + PORT);
   console.log("TB_USER: " + process.env.TB_USERNAME);
