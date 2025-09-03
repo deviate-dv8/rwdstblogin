@@ -42,18 +42,36 @@ if [ -z "$parsedUserInfo" ]; then
 fi
 
 # gen tb_login.dat
+mkdir -p ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/
+
+echo "Current User:"
+whoami
+
+if [[ $(whoami) == "root" || $(whoami) == "" ]]; then
+    user="wineuser"
+else
+    user=$(whoami)
+fi
+
+# Ensure $user is not empty
+if [[ -z "$user" ]]; then
+    user="wineuser"
+fi
+
+# Create the directory explicitly to ensure it exists
+mkdir -p ~/.wine/drive_c/users/$user/Saved\ Games/Toribash/
+
+# Move Light_Config files
+cp ./Light_Config/custom.cfg ~/.wine/drive_c/users/$user/Saved\ Games/Toribash/custom.cfg
+cp ./Light_Config/temp.cfg ~/.wine/drive_c/users/$user/Saved\ Games/Toribash/temp.cfg
 echo "Generating tb_login.dat..."
 {
     echo -n "user $username" | sed 's/./&\x00/g' | tr -d '\n'
     echo -ne "\r\0\n\0"
     echo -n "pass $password" | sed 's/./&\x00/g' | tr -d '\n'
     echo -ne "\r\0\n\0"
-} > ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/tb_login.dat
+} > ~/.wine/drive_c/users/$user/Saved\ Games/Toribash/tb_login.dat
 
-# move Light_Config to /.wine/drive_c/users/$USER/Saved\ Games	/Toribash/
-mkdir -p ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/
-cp ./Light_Config/custom.cfg ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/custom.cfg
-cp ./Light_Config/temp.cfg ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/temp.cfg
 echo "Parsed User Info:"
 echo "$parsedUserInfo"
 
@@ -105,7 +123,7 @@ if [[ $rewardStatus == "claimable" ]]; then
 	done
 	if [[ $rewardStatus == "successfully claimed" ]]; then
 	    echo "Reward Claimed"
-	else
+	else 
 	    echo "No reward to claim."
 	fi
 	# Kill the process after the loop
