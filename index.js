@@ -11,6 +11,7 @@ app.use(express.static("screenshots"));
 const PORT = 3000;
 const screenshotsDir = "./screenshots";
 let is_claiming = false;
+let lastRewardStatus = null;
 app.get("/", (req, res) => {
   res.json({ message: "Hello World" });
 });
@@ -74,6 +75,43 @@ app.get("/latest", (req, res) => {
     return res.status(404).json({ error: "No screenshots found" });
   }
   res.redirect(`./${latestScreenshotFilename}`);
+});
+app.get("/claim-promise", (req, res) => {
+  if (is_claiming) {
+    return res
+      .status(429)
+      .json({ error: "A claim process is already running." });
+  }
+  is_claiming = true;
+  const claimPromise = new Promise((resolve, reject) => {
+    exec("bash ./dailyScript.sh", (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Error: ${error.message}`);
+        is_claiming = false;
+        lastRewardStatus = "Internal Server Error";
+        return reject("Internal Server Error");
+      }
+      if (stderr) {
+        console.error(`Stderr: ${stderr}`);
+        is_claiming = false;
+        lastRewardStatus = "Internal Server Error";
+        return reject("Internal Server Error");
+      }
+      const outputLines = stdout.trim().split("\n");
+      const lastString = outputLines[outputLines.length - 1];
+      is_claiming = false;
+      lastRewardStatus = lastString;
+      return resolve(lastString);
+    });
+  });
+  Promise.resolve(claimPromise);
+  return res.json({ message: "Claim process started." });
+});
+app.get("/claim-status", (req, res) => {
+  return res.json({
+    is_claiming,
+    lastRewardStatus,
+  });
 });
 app.listen(3000, () => {
   console.log("Server is running on http://localhost:" + PORT);
