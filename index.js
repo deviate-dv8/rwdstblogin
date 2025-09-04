@@ -104,9 +104,18 @@ app.get("/claim-promise", (req, res) => {
       return resolve(lastString);
     });
   });
-  Promise.resolve(claimPromise);
+
+  claimPromise
+    .then((result) => {
+      console.log(`Claim process completed: ${result}`);
+    })
+    .catch((err) => {
+      console.error(`Claim process failed: ${err}`);
+    });
+
   return res.json({ message: "Claim process started." });
 });
+
 app.get("/claim-status", (req, res) => {
   return res.json({
     is_claiming,
