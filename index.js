@@ -122,7 +122,11 @@ app.get("/claim-status", (req, res) => {
     lastRewardStatus,
   });
 });
-app.listen(3000, () => {
+app.listen(3000, async () => {
   console.log("Server is running on http://localhost:" + PORT);
   console.log("TB_USER: " + process.env.TB_USERNAME);
+  const response = await fetch("https://api.ipify.org?format=json");
+  const data = await response.json();
+  const publicIP = data.ip;
+  console.log("Public IP: " + publicIP);
 });
