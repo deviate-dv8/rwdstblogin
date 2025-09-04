@@ -124,7 +124,8 @@ app.get("/claim-status", (req, res) => {
   });
 });
 app.get("/public-ip", async (req, res) => {
-  return res.json({ IP: await getIp() });
+  const IP = await getIp();
+  return res.json({ IP });
 });
 
 async function getIp() {
