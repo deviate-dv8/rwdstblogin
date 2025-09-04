@@ -123,14 +123,18 @@ app.get("/claim-status", (req, res) => {
     lastRewardStatus,
   });
 });
-app.get("/public-ip", (req, res) => {
-  return res.json({ publicIP });
+app.get("/public-ip", async (req, res) => {
+  return res.json({ IP: await getIp() });
 });
+
+async function getIp() {
+  const response = await fetch("https://api.ipify.org?format=json");
+  const data = await response.json();
+  return data.ip;
+}
 app.listen(3000, async () => {
   console.log("Server is running on http://localhost:" + PORT);
   console.log("TB_USER: " + process.env.TB_USERNAME);
-  const response = await fetch("https://api.ipify.org?format=json");
-  const data = await response.json();
-  publicIP = data.ip;
+  publicIP = await getIp();
   console.log("Public IP: " + publicIP);
 });
