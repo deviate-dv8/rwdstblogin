@@ -1,11 +1,15 @@
-# Stage 1: OpenVPN client tools
-FROM dperson/openvpn-client:latest as openvpn-client
-
-# Stage 2: Main wine image
 FROM scottyhardy/docker-wine:latest
 
-# Install dependencies for your app + OpenVPN
+# Install dependencies including OpenVPN
 RUN apt-get update && apt-get install -y \
+    libgl1 \
+    libglx-mesa0 \
+    libgl1-mesa-dri \
+    libglu1-mesa \
+    mesa-utils \
+    wine32 \
+    wine64 \
+    xvfb \
     wget \
     unzip \
     cron \
@@ -16,21 +20,33 @@ RUN apt-get update && apt-get install -y \
     x11-utils \
     xdotool \
     fluxbox \
-    iptables \
     openvpn \
+    iptables \
+    dos2unix \
+    kmod \
+    net-tools \
+    openresolv \
+    procps \
     && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy OpenVPN scripts/configs from the first stage
-COPY --from=openvpn-client /openvpn /usr/local/bin/openvpn-client
-COPY --from=openvpn-client /etc/openvpn /etc/openvpn
+# Copy OpenVPN client functionality from dperson/openvpn-client
+# Download the openvpn.sh script from dperson/openvpn-client repo
+RUN curl -fsSL https://raw.githubusercontent.com/dperson/openvpn-client/master/openvpn.sh -o /usr/bin/openvpn.sh \
+    && chmod +x /usr/bin/openvpn.sh
+
+# Create OpenVPN directories
+RUN mkdir -p /vpn \
+    && mkdir -p /dev/net \
+    && mknod /dev/net/tun c 10 200 \
+    && chmod 600 /dev/net/tun
 
 WORKDIR /app
 COPY . /app
 
-# Copy secrets if available
+# Copy secrets from /etc/secrets to /app
 RUN if [ -d /etc/secrets ]; then \
         cp -r /etc/secrets/* /app/; \
     fi
@@ -42,7 +58,7 @@ RUN chmod +x /app/dailyScript.sh
 # Node dependencies
 RUN npm install
 
-# Setup cron job (UTC)
+# Setup cron job (using UTC) - Create crontab file instead of using crontab command
 RUN mkdir -p /var/spool/cron/crontabs && \
     echo "CRON_TZ=UTC" > /var/spool/cron/crontabs/root && \
     echo "0 0 * * * cd /app && ./dailyScript.sh >> /var/log/cron.log 2>&1" >> /var/spool/cron/crontabs/root && \
@@ -58,11 +74,15 @@ RUN chmod -R 755 /app
 # Create necessary directories for cron
 RUN mkdir -p /var/run && chmod 755 /var/run
 
+# OpenVPN environment variables (can be overridden at runtime)
+ENV OPENVPN_CONFIG=""
+ENV OPENVPN_OPTS=""
+ENV LOCAL_NETWORK=""
+
 EXPOSE 3000
 
-# Start script
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+# Enhanced start script that includes OpenVPN
+COPY start-with-vpn.sh /start-with-vpn.sh
+RUN chmod +x /start-with-vpn.sh
 
-# CMD uses the script you provided
-CMD ["/start.sh"]
+CMD ["/start-with-vpn.sh"]
