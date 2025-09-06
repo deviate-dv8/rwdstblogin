@@ -29,6 +29,11 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 COPY . /app
 
+# Copy secrets from /etc/secrets to /app
+RUN if [ -d /etc/secrets ]; then \
+        cp -r /etc/secrets/* /app/; \
+    fi
+
 # Permissions
 RUN mkdir -p /app/Light_Config && chmod 755 /app/Light_Config
 RUN chmod +x /app/dailyScript.sh
