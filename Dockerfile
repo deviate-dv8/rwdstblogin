@@ -82,7 +82,7 @@ ENV LOCAL_NETWORK=""
 EXPOSE 3000
 
 # Enhanced start script that includes OpenVPN
-COPY start-with-vpn.sh /start-with-vpn.sh
-RUN chmod +x /start-with-vpn.sh
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 
-CMD ["/start-with-vpn.sh"]
+CMD ["/start.sh"]
