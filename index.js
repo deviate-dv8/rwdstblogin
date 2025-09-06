@@ -15,9 +15,14 @@ let lastRewardStatus = null;
 let publicIP;
 
 let VPN_ENABLED = process.env.USE_VPN === "1";
-let credentials = fs.readFileSync("./credentials.txt", "utf8");
-let config = fs.readFileSync("./config.ovpn", "utf8");
-
+let credentials, config;
+if (VPN_ENABLED) {
+  credentials = fs.readFileSync("./credentials.txt", "utf8");
+  config = fs.readFileSync("./config.ovpn", "utf8");
+  console.log("VPN is enabled. Files read successfully.");
+} else {
+  console.log("VPN is not enabled. Skipping file read.");
+}
 app.get("/", (req, res) => {
   res.json({ message: "Hello World" });
 });
@@ -137,7 +142,7 @@ app.get("/config", (req, res) => {
   return res.json({
     TB_USERNAME: process.env.TB_USERNAME,
     TB_PASSWORD: process.env.TB_PASSWORD,
-    ...(process.env.USE_VPN == "1"
+    ...(VPN_ENABLED
       ? {
           credentials,
           config,
