@@ -41,9 +41,11 @@ RUN chmod +x /app/dailyScript.sh
 # Node dependencies
 RUN npm install
 
-# Setup cron job (using UTC)
-RUN echo "CRON_TZ=UTC\n0 0 * * * cd /app && ./dailyScript.sh >> /var/log/cron.log 2>&1" \
-    | crontab -
+# Setup cron job (using UTC) - Create crontab file instead of using crontab command
+RUN mkdir -p /var/spool/cron/crontabs && \
+    echo "CRON_TZ=UTC" > /var/spool/cron/crontabs/root && \
+    echo "0 0 * * * cd /app && ./dailyScript.sh >> /var/log/cron.log 2>&1" >> /var/spool/cron/crontabs/root && \
+    chmod 600 /var/spool/cron/crontabs/root
 
 # Log file
 RUN touch /var/log/cron.log && chmod 666 /var/log/cron.log
@@ -52,12 +54,13 @@ RUN touch /var/log/cron.log && chmod 666 /var/log/cron.log
 RUN mkdir -p /app/screenshots && chmod 755 /app/screenshots
 RUN chmod -R 755 /app
 
+# Create necessary directories for cron
+RUN mkdir -p /var/run && chmod 755 /var/run
+
 EXPOSE 3000
 
-# Start OpenVPN optionally, then cron and node
-CMD if [ "$USE_VPN" = "1" ] && [ -f /app/config.ovpn ]; then \
-        echo "Starting OpenVPN..."; \
-        openvpn --config /app/config.ovpn & \
-    fi && \
-    cron -f & \
-    npm run dev
+# Start script
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
+CMD ["/start.sh"]
