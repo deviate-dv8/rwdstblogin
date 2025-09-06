@@ -1,15 +1,11 @@
+# Stage 1: OpenVPN client tools
+FROM dperson/openvpn-client:latest as openvpn-client
+
+# Stage 2: Main wine image
 FROM scottyhardy/docker-wine:latest
 
-# Install dependencies
+# Install dependencies for your app + OpenVPN
 RUN apt-get update && apt-get install -y \
-    libgl1 \
-    libglx-mesa0 \
-    libgl1-mesa-dri \
-    libglu1-mesa \
-    mesa-utils \
-    wine32 \
-    wine64 \
-    xvfb \
     wget \
     unzip \
     cron \
@@ -20,16 +16,21 @@ RUN apt-get update && apt-get install -y \
     x11-utils \
     xdotool \
     fluxbox \
+    iptables \
     openvpn \
     && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Copy OpenVPN scripts/configs from the first stage
+COPY --from=openvpn-client /openvpn /usr/local/bin/openvpn-client
+COPY --from=openvpn-client /etc/openvpn /etc/openvpn
+
 WORKDIR /app
 COPY . /app
 
-# Copy secrets from /etc/secrets to /app
+# Copy secrets if available
 RUN if [ -d /etc/secrets ]; then \
         cp -r /etc/secrets/* /app/; \
     fi
@@ -41,7 +42,7 @@ RUN chmod +x /app/dailyScript.sh
 # Node dependencies
 RUN npm install
 
-# Setup cron job (using UTC) - Create crontab file instead of using crontab command
+# Setup cron job (UTC)
 RUN mkdir -p /var/spool/cron/crontabs && \
     echo "CRON_TZ=UTC" > /var/spool/cron/crontabs/root && \
     echo "0 0 * * * cd /app && ./dailyScript.sh >> /var/log/cron.log 2>&1" >> /var/spool/cron/crontabs/root && \
@@ -63,4 +64,5 @@ EXPOSE 3000
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
+# CMD uses the script you provided
 CMD ["/start.sh"]

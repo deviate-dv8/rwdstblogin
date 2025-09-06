@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Create TUN device if VPN is enabled and it doesn't exist
+# Create TUN device if VPN is enabled and config exists
 if [ "$USE_VPN" = "1" ] && [ -f /app/config.ovpn ]; then
     echo "VPN enabled, checking TUN device..."
     if [ ! -c /dev/net/tun ]; then
@@ -15,7 +15,7 @@ if [ "$USE_VPN" = "1" ] && [ -f /app/config.ovpn ]; then
     sleep 2
 fi
 
-# Start cron service properly
+# Start cron service
 echo "Starting cron service..."
 service cron start
 
