@@ -2,6 +2,31 @@
 username=$TB_USERNAME
 password=$TB_PASSWORD
 
+# Function to set or disable Wine proxy settings
+set_wine_proxy() {
+    local proxy=$1
+    if [[ -n "$proxy" ]]; then
+        echo "Setting Wine proxy to: $proxy"
+        wine reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1 /f
+        wine reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyServer /t REG_SZ /d "$proxy" /f
+    else
+        echo "No proxy detected. Disabling Wine proxy."
+        wine reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyEnable /t REG_DWORD /d 0 /f
+    fi
+}
+
+# Check if HTTP_PROXY or HTTPS_PROXY is set
+if [[ -n "$HTTP_PROXY" ]]; then
+    set_wine_proxy "$HTTP_PROXY"
+elif [[ -n "$HTTPS_PROXY" ]]; then
+    set_wine_proxy "$HTTPS_PROXY"
+else
+    set_wine_proxy ""  # Disable proxy if none is set
+fi
+# Verify external IP
+echo "Verifying external IP..."
+curl ifconfig.io
+
 # Function to fetch user info
 fetch_user_info() {
     local username=$1
@@ -57,16 +82,7 @@ mkdir -p ~/.wine/drive_c/users/$USER/Saved\ Games/Toribash/
 echo "Current User:"
 whoami
 
-# if [[ $(whoami) == "root" || $(whoami) == "" ]]; then
-#     user="wineuser"
-# else
 user=$(whoami)
-# fi
-#
-# # Ensure $user is not empty
-# if [[ -z "$user" ]]; then
-#     user="wineuser"
-# fi
 
 # Create the directory explicitly to ensure it exists
 mkdir -p ~/.wine/drive_c/users/$user/Saved\ Games/Toribash/
