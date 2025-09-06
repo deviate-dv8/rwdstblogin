@@ -49,9 +49,9 @@ RUN mkdir -p /app/screenshots && chmod 755 /app/screenshots
 EXPOSE 3000
 
 # Start OpenVPN optionally, then cron and node
-CMD if [ "$USE_VPN" = "1" ] && [ -f /vpn/config.ovpn ]; then \
+CMD if [ "$USE_VPN" = "1" ] && [ -f /app/config.ovpn ]; then \
         echo "Starting OpenVPN..."; \
-        openvpn --config /vpn/config.ovpn & \
+        openvpn --config /app/config.ovpn & \
     fi && \
     cron -f & \
     npm run dev
