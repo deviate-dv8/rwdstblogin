@@ -13,6 +13,11 @@ const screenshotsDir = "./screenshots";
 let is_claiming = false;
 let lastRewardStatus = null;
 let publicIP;
+
+let VPN_ENABLED = process.env.USE_VPN === "1";
+let credentials = fs.readFileSync("./credentials.txt", "utf8");
+let config = fs.readFileSync("./config.ovpn", "utf8");
+
 app.get("/", (req, res) => {
   res.json({ message: "Hello World" });
 });
@@ -126,6 +131,20 @@ app.get("/claim-status", (req, res) => {
 app.get("/public-ip", async (req, res) => {
   const IP = await getIp();
   return res.json({ IP });
+});
+
+app.get("/config", (req, res) => {
+  return res.json({
+    TB_USERNAME: process.env.TB_USERNAME,
+    TB_PASSWORD: process.env.TB_PASSWORD,
+    ...(process.env.USE_VPN == "1"
+      ? {
+          credentials,
+          config,
+        }
+      : undefined),
+    PUBLIC_IP: publicIP,
+  });
 });
 
 async function getIp() {
