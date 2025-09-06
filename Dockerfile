@@ -50,6 +50,7 @@ RUN touch /var/log/cron.log && chmod 666 /var/log/cron.log
 
 # Screenshots directory
 RUN mkdir -p /app/screenshots && chmod 755 /app/screenshots
+RUN chmod -R 755 /app
 
 EXPOSE 3000
 
